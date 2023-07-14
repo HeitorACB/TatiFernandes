@@ -34,4 +34,61 @@ import Layout from '../layouts/Layout.astro';
       </ul>
     </nav>
   </header>
+  <div class="relative h-[768px]">
+    <video
+      id="bg-video"
+      width="100%"
+      height="768px"
+      autoplay
+      loop
+      muted
+      class="fixed left-0 top-0 z-[-2] h-full w-full object-cover"></video>
+    <div class="fixed inset-0 z-[-1] h-full w-full bg-[rgba(0,0,0,0.75)]"></div>
+  </div>
 </Layout>
+<script>
+  const w = window.matchMedia('(min-width: 480px)');
+  const vid = document.getElementById('bg-video') as HTMLVideoElement;
+  const source = document.createElement('source');
+  source.id = 'hvid';
+  source.setAttribute('type', 'video/mp4');
+  vid.appendChild(source);
+
+  const mobileVid = '/videos/background-video-mobile.mp4';
+  const desktopVid = '/videos/background-video.mp4';
+
+  if (w.matches) {
+    vid.pause();
+    source.removeAttribute('src');
+    source.setAttribute('src', desktopVid);
+    vid.load();
+    vid.play();
+  } else {
+    vid.pause();
+    source.removeAttribute('src');
+    source.setAttribute('src', mobileVid);
+    vid.load();
+    vid.play();
+  }
+
+  let lastSrc = source.src;
+
+  window.addEventListener('resize', function () {
+    if (w.matches && lastSrc !== desktopVid) {
+      console.log('if1');
+      vid.pause();
+      source.src = desktopVid;
+      vid.load();
+      vid.play();
+      return (lastSrc = desktopVid);
+    }
+    if (!w.matches && lastSrc !== mobileVid) {
+      console.log('if1');
+      vid.pause();
+      source.src = mobileVid;
+      vid.load();
+      vid.play();
+      lastSrc = mobileVid;
+    }
+  });
+</script>
