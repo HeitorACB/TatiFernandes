@@ -1,62 +1,15 @@
 ---
-import { Image } from '@astrojs/image/components';
 import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import BackgroundVideo from '../components/BackgroundVideo.astro';
 ---
 
 <Layout title="RD Medicine">
-  <header
-    class="container flex items-center justify-between bg-black text-white"
-  >
-    <div
-      class="flex h-[104px] w-[79px] justify-center rounded-b-[40px] bg-white pb-[25px] pt-[18px]"
-    >
-      <Image
-        src="/images/logo-rd-medicine.png"
-        loading="eager"
-        format="webp"
-        alt="Logo RD Medicine"
-        width={92}
-        height={92}
-        class="inline-block h-[61px] w-[61px] align-middle"
-      />
-    </div>
-    <nav class="flex gap-x-14 text-sm">
-      <ul class="hidden bg-transparent capitalize lg:flex">
-        <li class="p-6"><a href="#">diferenciais</a></li>
-        <li class="p-6"><a href="#">nossa equipe</a></li>
-        <li class="p-6"><a href="#">nossos treinamentos</a></li>
-        <li class="p-6"><a href="#">sobre a RD Medicine</a></li>
-        <li class="p-6">
-          <a
-            class="rounded-[70px] border-[2px] border-white px-12 py-3 text-sm leading-6"
-            href="">Acessar</a
-          >
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <div class="relative h-[768px]">
-    <video
-      width="100%"
-      height="768px"
-      autoplay
-      loop
-      muted
-      poster="/images/background-video-mobile-poster.webp"
-      src="/videos/background-video-mobile.mp4"
-      class="fixed left-0 top-0 z-[-2] block h-full w-full object-cover sm:hidden"
-    ></video>
-    <video
-      width="100%"
-      height="668px"
-      autoplay
-      loop
-      muted
-      poster="/images/background-video-poster.webp"
-      src="/videos/background-video.mp4"
-      class="fixed left-0 top-0 z-[-2] hidden h-full w-full object-cover sm:block"
-    >
-    </video>
-    <div class="fixed inset-0 z-[-1] h-full w-full bg-[rgba(0,0,0,0.75)]"></div>
-  </div>
+  <Header />
+  <BackgroundVideo />
+  <main class="container text-white">
+    <Hero />
+  </main>
+  <footer></footer>
 </Layout>
