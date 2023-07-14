@@ -34,7 +34,7 @@ module.exports = {
         opacity: {
           '0%': { transform: 'opacity: 1' },
           '100%': { transform: 'opacity: 0' },
-        }
+        },
       },
       animation: {
         opacity: 'opacity 3s infinity ease-in-out',

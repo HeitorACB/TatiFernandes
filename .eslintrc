@@ -1,17 +1,9 @@
 {
-  "extends": [
-    "plugin:astro/recommended",
-    "plugin:prettier/recommended"
-  ],
+  "extends": ["plugin:astro/recommended", "plugin:prettier/recommended"],
   "overrides": [
     {
-      "files": [
-        "*.astro"
-      ],
-      "plugins": [
-        "astro",
-        "prettier"
-      ],
+      "files": ["*.astro"],
+      "plugins": ["astro", "prettier"],
       "env": {
         "node": true,
         "astro/astro": true,
@@ -20,9 +12,7 @@
       "parser": "astro-eslint-parser",
       "parserOptions": {
         "parser": "@typescript-eslint/parser",
-        "extraFileExtensions": [
-          ".astro"
-        ],
+        "extraFileExtensions": [".astro"],
         "sourceType": "module"
       },
       "rules": {
@@ -31,10 +21,7 @@
       }
     },
     {
-      "files": [
-        "**/*.astro/*.js",
-        "*.astro/*.js"
-      ],
+      "files": ["**/*.astro/*.js", "*.astro/*.js"],
       "env": {
         "browser": true,
         "es2020": true
