@@ -1,12 +1,37 @@
 ---
+import { Image } from '@astrojs/image/components';
 import Layout from '../layouts/Layout.astro';
-import Button from '../components/Button';
 ---
 
-<Layout title="Soft Everywhere - Seu site veloz e elegante">
-	<main class="container mx-auto">
-		<Button>
-			Entrar em contato
-		</Button>
-	</main>
+<Layout title="RD Medicine">
+  <header
+    class="container flex items-center justify-between bg-black text-white"
+  >
+    <div
+      class="flex h-[104px] w-[79px] justify-center rounded-b-[40px] bg-white pb-[25px] pt-[18px]"
+    >
+      <Image
+        src="/images/logo-rd-medicine.png"
+        format="webp"
+        alt="Logo RD Medicine"
+        width={61}
+        height={61}
+        class="inline-block align-middle"
+      />
+    </div>
+    <nav class="flex gap-x-14 text-sm">
+      <ul class="hidden bg-transparent capitalize lg:flex">
+        <li class="p-6"><a href="#">diferenciais</a></li>
+        <li class="p-6"><a href="#">nossa equipe</a></li>
+        <li class="p-6"><a href="#">nossos treinamentos</a></li>
+        <li class="p-6"><a href="#">sobre a RD Medicine</a></li>
+        <li class="p-6">
+          <a
+            class="rounded-[70px] border-[2px] border-white px-12 py-3 text-sm leading-6"
+            href="">Acessar</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </header>
 </Layout>
