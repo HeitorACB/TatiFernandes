@@ -28,7 +28,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],
-        serif: ['Unbounded Variable', 'sans-serif'],
+        title: ['Unbounded Variable', 'sans-serif'],
       },
     },
   },

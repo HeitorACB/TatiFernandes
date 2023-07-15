@@ -1,0 +1,11 @@
+---
+export interface Props {
+  className?: string;
+}
+
+const { className } = Astro.props;
+---
+
+<section class={`bg-[#000830] w-full py-24 relative z-[-1] ${className}`}>
+  <slot />
+</section>

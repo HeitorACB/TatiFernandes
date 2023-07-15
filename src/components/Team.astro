@@ -1,0 +1,62 @@
+---
+import Section from './Section.astro';
+
+const carouselButtons = [
+  {
+    label: 'especialista anterior',
+    icon: 'M15 18L9 12L15 6',
+  },
+  {
+    label: 'próximo especilista',
+    icon: 'M9 18L15 12L9 6',
+  },
+];
+---
+
+<Section>
+  <div class="container flex justify-between">
+    <h2 class="font-bold font-title text-4xl uppercase relative">
+      Nossa equipe de <span class="text-[#FF3158] underline">especialistas</span
+      >
+      <svg
+        class="absolute top-5 left-4 transform -translate-x-1/2 -translate-y-1/2"
+        xmlns="http://www.w3.org/2000/svg"
+        width="80"
+        height="80"
+        viewBox="0 0 80 80"
+        fill="none"
+      >
+        <circle cx="3" cy="3" r="3" fill="#1E3BDE"></circle>
+        <circle cx="40" cy="3" r="3" fill="#1E3BDE"></circle>
+        <circle cx="77" cy="3" r="3" fill="#1E3BDE"></circle>
+        <circle cx="3" cy="40" r="3" fill="#1E3BDE"></circle>
+        <circle cx="3" cy="77" r="3" fill="#1E3BDE"></circle>
+        <circle cx="40" cy="77" r="3" fill="#1E3BDE"></circle>
+        <circle cx="77" cy="77" r="3" fill="#1E3BDE"></circle>
+      </svg>
+    </h2>
+    <div class="flex gap-x-8">
+      {
+        carouselButtons.map(({ label, icon }) => (
+          <button class="flex items-center justify-center w-12 h-12 border border-white rounded-full">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+            >
+              <path
+                d={icon}
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span class="sr-only">{label}</span>
+          </button>
+        ))
+      }
+    </div>
+  </div>
+</Section>
