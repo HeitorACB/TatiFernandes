@@ -1,0 +1,51 @@
+---
+import CTA from './CTA.astro';
+import BenefitsCard from './BenefitsCard.astro';
+import BenefitsCardIcon from './BenefitsCardIcon.astro';
+---
+
+<section class="bg-[#000830] w-full py-24">
+  <div class="container flex flex-col gap-y-16 items-baseline">
+    <h2 class="font-serif uppercase text-4xl leading-[44px]">
+      Veja as <span class="text-[#FF3158] underline">vantagens</span> de ser um
+      RD
+    </h2>
+    <div class="flex items-stretch gap-x-6">
+      <BenefitsCard>
+        <BenefitsCardIcon type="pen" />
+        <p>
+          <span class="text-[#FF3158]">3 horas de revisões</span> ao vivo
+          baseadas em questões toda segunda e quarta à noite ministradas em
+          português.
+        </p>
+      </BenefitsCard>
+      <BenefitsCard>
+        <BenefitsCardIcon type="people" />
+        <p>
+          RD produtividade: <span class="text-[#FF3158]">Mentoria 1:1</span> de
+          estudos, produtividade e otimização de tempo para adequar o cronograma
+          de estudos à sua rotina.
+        </p>
+      </BenefitsCard>
+      <BenefitsCard>
+        <BenefitsCardIcon type="graduate" />
+        <p>
+          <span class="text-[#FF3158]">Curso extensivo</span>
+           para o STEP 1 em inglês e português com didática simples e sistema de
+          revisões constantes, lecionado por professores com as maiores notas do
+          Brasil e residentes nas maiores instituições americanas.
+        </p>
+      </BenefitsCard>
+      <BenefitsCard>
+        <BenefitsCardIcon type="chart" />
+        <p>
+          A RD med procura as melhores <span class="text-[#FF3158]"
+            >oportunidades de estágios</span
+          > de acordo com o seu perfil, cuida do seu currículo e documentação e
+          escreve os modelos de email que você precisa enviar às instituições.
+        </p>
+      </BenefitsCard>
+    </div>
+    <CTA>Conhecer serviços</CTA>
+  </div>
+</section>
