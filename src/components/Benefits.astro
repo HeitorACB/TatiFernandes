@@ -2,10 +2,11 @@
 import CTA from './CTA.astro';
 import BenefitsCard from './BenefitsCard.astro';
 import BenefitsCardIcon from './BenefitsCardIcon.astro';
+import { Image } from '@astrojs/image/components';
 ---
 
-<section class="bg-[#000830] w-full py-24">
-  <div class="container flex flex-col gap-y-16 items-baseline">
+<section class="bg-[#000830] w-full py-24 relative z-[-1]">
+  <div class="container flex flex-col gap-y-16 items-baseline relative z-[1]">
     <h2 class="font-serif font-bold uppercase text-4xl leading-[44px]">
       Veja as <span class="text-[#FF3158] underline">vantagens</span> de ser um
       RD
@@ -48,4 +49,12 @@ import BenefitsCardIcon from './BenefitsCardIcon.astro';
     </div>
     <CTA className="self-center">Conhecer serviços</CTA>
   </div>
+  <Image
+    class="absolute bottom-0 right-0 z-0"
+    src="/images/benefits-line-pattern.png"
+    alt="padrào de linhas de fundo"
+    width={398}
+    height={436}
+    format="webp"
+  />
 </section>
