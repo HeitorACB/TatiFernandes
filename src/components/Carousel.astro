@@ -1,0 +1,14 @@
+---
+export interface Props {
+  id: string;
+  spacing: `gap-x-${number}`;
+}
+const { id, spacing } = Astro.props;
+---
+
+<div
+  id={id}
+  class={`lg:ml-[calc((100%-1024px)/2)] xl:ml-[calc((100%-1366px)/2)] px-3 mt-14 flex overflow-x-hidden ${spacing} w-full lg:max-w-[calc(1024px+(100%-1024px)/2)] xl:max-w-[calc(1366px+(100%-1366px)/2)]`}
+>
+  <slot />
+</div>

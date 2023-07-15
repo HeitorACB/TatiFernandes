@@ -1,30 +1,26 @@
 ---
+import { Image } from '@astrojs/image/components';
+import Carousel from './Carousel.astro';
 import Section from './Section.astro';
-
-const carouselButtons = [
-  {
-    label: 'especialista anterior',
-    icon: 'M15 18L9 12L15 6',
-  },
-  {
-    label: 'próximo especilista',
-    icon: 'M9 18L15 12L9 6',
-  },
-];
+import { carouselTeamButtons, carouselTeamItems } from 'carouselData';
 ---
 
 <Section>
-  <div class="container flex justify-between">
-    <h2 class="font-bold font-title text-4xl uppercase relative">
-      Nossa equipe de <span class="text-[#FF3158] underline">especialistas</span
+  <div class="container flex justify-between flex-col sm:flex-row gap-y-8">
+    <h2
+      class="font-bold font-title text-2xl sm:text-4xl uppercase relative ml-3 sm:ml-0"
+    >
+      Nossa equipe de <span
+        class="text-[#FF3158] underline text-3xl sm:text-4xl"
+        >especialistas</span
       >
       <svg
-        class="absolute top-5 left-4 transform -translate-x-1/2 -translate-y-1/2"
         xmlns="http://www.w3.org/2000/svg"
         width="80"
         height="80"
         viewBox="0 0 80 80"
         fill="none"
+        class="hidden sm:block absolute top-5 left-4 transform -translate-x-1/2 -translate-y-1/2"
       >
         <circle cx="3" cy="3" r="3" fill="#1E3BDE"></circle>
         <circle cx="40" cy="3" r="3" fill="#1E3BDE"></circle>
@@ -34,11 +30,30 @@ const carouselButtons = [
         <circle cx="40" cy="77" r="3" fill="#1E3BDE"></circle>
         <circle cx="77" cy="77" r="3" fill="#1E3BDE"></circle>
       </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="80"
+        height="120"
+        viewBox="0 0 80 120"
+        fill="none"
+        class="sm:hidden absolute top-8 -left-4 -translate-y-1/2"
+      >
+        <circle cx="3" cy="3" r="3" fill="#1E3BDE"></circle>
+        <circle cx="40" cy="3" r="3" fill="#1E3BDE"></circle>
+        <circle cx="77" cy="3" r="3" fill="#1E3BDE"></circle>
+        <circle cx="3" cy="60" r="3" fill="#1E3BDE"></circle>
+        <circle cx="3" cy="117" r="3" fill="#1E3BDE"></circle>
+        <circle cx="40" cy="117" r="3" fill="#1E3BDE"></circle>
+        <circle cx="77" cy="117" r="3" fill="#1E3BDE"></circle>
+      </svg>
     </h2>
-    <div class="flex gap-x-8">
+    <div class="flex gap-x-8 self-end sm:self-auto">
       {
-        carouselButtons.map(({ label, icon }) => (
-          <button class="flex items-center justify-center w-12 h-12 border border-white rounded-full">
+        carouselTeamButtons.map(({ label, icon }, index) => (
+          <button
+            id={`carousel-team-button-${index}`}
+            class="flex items-center justify-center w-12 h-12 border border-white rounded-full"
+          >
             <svg
               width="24"
               height="24"
@@ -59,4 +74,36 @@ const carouselButtons = [
       }
     </div>
   </div>
+  <Carousel id="teamCarousel" spacing="gap-x-8">
+    {
+      carouselTeamItems.map(({ img, title, description }) => (
+        <div class="flex flex-col gap-y-6 items-stretch">
+          <Image
+            class="max-w-none"
+            src={`/images/carousel/${img}.png`}
+            alt={`Foto de ${title.replace(/,.*$/, '')}`}
+            width={280}
+            height={296}
+            quality={100}
+            format="webp"
+          />
+          <h5 class="text-xl font-semibold">{title}</h5>
+          <p class="text-gray-400">{description}</p>
+        </div>
+      ))
+    }
+  </Carousel>
 </Section>
+<script>
+  import carouseInit from 'utils/carousel';
+  import { carouselTeamItems, carouselTeamButtons } from 'carouselData';
+  carouseInit({
+    carouselItems: carouselTeamItems,
+    buttonSelectors: carouselTeamButtons.map(
+      (_, index) => `#carousel-team-button-${index}`,
+    ),
+    carouselSelector: '#teamCarousel',
+    itemSpacing: 32,
+    itemWidth: 280,
+  });
+</script>
