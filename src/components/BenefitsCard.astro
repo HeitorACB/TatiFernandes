@@ -1,5 +1,15 @@
+---
+import BenefitsCardIcon from './BenefitsCardIcon.astro';
+export interface Props {
+  type: 'pen' | 'people' | 'graduate' | 'chart';
+}
+
+const { type } = Astro.props;
+---
+
 <div
   class="flex p-6 flex-col gap-6 flex-1 self-stretch rounded-2xl bg-[#12193E] min-w-[230px]"
 >
+  <BenefitsCardIcon type={type} />
   <slot />
 </div>

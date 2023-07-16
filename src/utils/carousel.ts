@@ -4,37 +4,47 @@ type initCarouselProps = {
   carouselSelector: string;
   buttonSelectors: string[];
   carouselItems: object[];
-  itemWidth: number;
   itemSpacing: number;
+  onChange?: (active: number) => void;
+  ignoreScrollEnd?: boolean;
 };
 
 export default function initCarousel({
   carouselSelector,
   buttonSelectors,
   carouselItems,
-  itemWidth,
   itemSpacing,
+  onChange,
+  ignoreScrollEnd,
 }: initCarouselProps) {
+  let itemWidth = document.querySelector(`${carouselSelector} *`)!.clientWidth;
+
   buttonSelectors.forEach((selector, index) => {
     document
       .querySelector(selector)!
       .addEventListener('click', index ? nextSlide : prevSlide);
   });
-  window.addEventListener('resize', () => {
-    const previousInitialActive = initialActive;
-    initialActive = Math.floor(
-      document.querySelector(carouselSelector)!.clientWidth /
-        (itemWidth + itemSpacing),
-    );
-    active = active + initialActive - previousInitialActive;
-  });
-  let initialActive = Math.floor(
-    document.querySelector(carouselSelector)!.clientWidth /
-      (itemWidth + itemSpacing),
-  );
+    window.addEventListener('resize', () => {
+      itemWidth = document.querySelector(`${carouselSelector} *`)!.clientWidth;
+      if(!ignoreScrollEnd) {
+        const previousInitialActive = initialActive;
+        initialActive = Math.floor(
+          document.querySelector(carouselSelector)!.clientWidth /
+            (itemWidth + itemSpacing),
+        );
+        active = active + initialActive - previousInitialActive;
+      }
+    });
+  let initialActive = ignoreScrollEnd
+    ? 1
+    : Math.floor(
+        document.querySelector(carouselSelector)!.clientWidth /
+          (itemWidth + itemSpacing),
+      );
   let active = initialActive;
 
   function scrollToActive() {
+    onChange?.(active - initialActive);
     document.querySelector(carouselSelector)!.scrollTo({
       left: (active - initialActive) * (itemWidth + itemSpacing),
       behavior: 'smooth',

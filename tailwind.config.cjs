@@ -12,7 +12,6 @@ module.exports = {
         black: '#202020',
       },
       screens: {
-        xl: '1366px',
       },
       container: {
         center: true,

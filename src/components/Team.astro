@@ -1,11 +1,11 @@
 ---
 import { Image } from '@astrojs/image/components';
-import Carousel from './Carousel.astro';
+import Carousel from './CarouselScreen.astro';
 import Section from './Section.astro';
 import { carouselTeamButtons, carouselTeamItems } from 'carouselData';
 ---
 
-<Section>
+<Section className="bg-[#000C46]">
   <div class="container flex justify-between flex-col sm:flex-row gap-y-8">
     <h2
       class="font-bold font-title text-2xl sm:text-4xl uppercase relative ml-3 sm:ml-0"
@@ -52,7 +52,7 @@ import { carouselTeamButtons, carouselTeamItems } from 'carouselData';
         carouselTeamButtons.map(({ label, icon }, index) => (
           <button
             id={`carousel-team-button-${index}`}
-            class="flex items-center justify-center w-12 h-12 border border-white rounded-full"
+            class="flex items-center justify-center w-14 h-14 border border-white rounded-full"
           >
             <svg
               width="24"
@@ -80,14 +80,14 @@ import { carouselTeamButtons, carouselTeamItems } from 'carouselData';
         <div class="flex flex-col gap-y-6 items-stretch">
           <Image
             class="max-w-none"
-            src={`/images/carousel/${img}.png`}
+            src={`/images/specialists/${img}.png`}
             alt={`Foto de ${title.replace(/,.*$/, '')}`}
             width={280}
             height={296}
             quality={100}
             format="webp"
           />
-          <h5 class="text-xl font-semibold">{title}</h5>
+          <p class="text-xl font-semibold">{title}</p>
           <p class="text-gray-400">{description}</p>
         </div>
       ))
@@ -104,6 +104,5 @@ import { carouselTeamButtons, carouselTeamItems } from 'carouselData';
     ),
     carouselSelector: '#teamCarousel',
     itemSpacing: 32,
-    itemWidth: 280,
   });
 </script>
