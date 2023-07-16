@@ -2,9 +2,11 @@
 import { Image } from '@astrojs/image/components';
 ---
 
-<header class="container flex items-center justify-between text-white">
+<header
+  class="container flex items-center justify-between text-white relative z-[2]"
+>
   <div
-    class="flex h-[104px] w-[79px] justify-center rounded-b-full bg-white pb-[25px] pt-[18px]"
+    class="flex h-[104px] lg:w-[79px] w-24 justify-center rounded-b-full bg-white pb-[25px] pt-[18px]"
   >
     <Image
       src="/images/logo-rd-medicine.png"
@@ -16,18 +18,44 @@ import { Image } from '@astrojs/image/components';
       class="inline-block h-[61px] w-[61px] align-middle"
     />
   </div>
-  <nav class="flex gap-x-14 text-sm">
-    <ul class="hidden bg-transparent capitalize lg:flex">
+  <nav class="flex gap-x-14 text-sm relative">
+    <button id="menu-button" class="lg:hidden flex gap-x-2 items-center"
+      ><svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+      >
+        <path
+          d="M18 10H6M21 6H3M21 14H3M18 18H6"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"></path>
+      </svg>Menu</button
+    >
+    <ul
+      class="flex-col w-[340px] lg:w-[unset] top-6 absolute bg-white lg:bg-transparent text-black lg:text-white right-0 lg:static lg:flex-row hidden bg-transparent capitalize lg:flex rounded-lg lg:rounded-none shadow-2xl lg:shadow-none transition-all duration-500 ease-in-out"
+    >
       <li class="p-6"><a href="#">diferenciais</a></li>
       <li class="p-6"><a href="#">nossa equipe</a></li>
       <li class="p-6"><a href="#">nossos treinamentos</a></li>
       <li class="p-6"><a href="#">sobre a RD Medicine</a></li>
-      <li class="p-6">
+      <li class="p-6 lg:py-6 lg:px-0 xl:p-6">
         <a
-          class="rounded-[70px] border-[2px] border-white py-3 px-12 text-sm leading-6"
+          class="rounded-[70px] border-[2px] lg:border-white border-[#203DE2] lg:text-white text-[#203DE2] py-3 px-12 px-14 text-sm leading-6"
           href="">Acessar</a
         >
       </li>
     </ul>
   </nav>
 </header>
+<script>
+  const menuButton = document.querySelector('#menu-button')!;
+  const menu = document.querySelector('#menu-button + ul')!;
+
+  menuButton.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>

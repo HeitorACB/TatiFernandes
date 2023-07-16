@@ -1,8 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
-  ],
+  content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+
   theme: {
     extend: {
       colors: {
@@ -11,6 +10,9 @@ module.exports = {
         primaryAltDark: '#C0162A',
         white: '#F7F7F7',
         black: '#202020',
+      },
+      screens: {
+        xl: '1366px',
       },
       container: {
         center: true,
@@ -22,15 +24,18 @@ module.exports = {
         },
         padding: {
           DEFAULT: '1rem',
-          sm: '1rem',
-          md: '1rem',
-          lg: '1rem',
+          sm: '2rem',
+          md: '2rem',
+          lg: '2rem',
           xl: '1rem',
         },
       },
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],
         title: ['Unbounded Variable', 'sans-serif'],
+      },
+      fontSize: {
+        '3xl': '2rem',
       },
     },
   },
