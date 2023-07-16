@@ -55,7 +55,12 @@ import { Image } from '@astrojs/image/components';
   const menuButton = document.querySelector('#menu-button')!;
   const menu = document.querySelector('#menu-button + ul')!;
 
-  menuButton.addEventListener('click', () => {
+  window.addEventListener('click', () => {
+    menu.classList.add('hidden');
+  });
+
+  menuButton.addEventListener('click', (event) => {
     menu.classList.toggle('hidden');
+    event.stopPropagation();
   });
 </script>
