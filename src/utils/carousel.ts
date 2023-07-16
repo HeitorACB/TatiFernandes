@@ -1,3 +1,5 @@
+import touch from './touch';
+
 type initCarouselProps = {
   carouselSelector: string;
   buttonSelectors: string[];
@@ -46,4 +48,12 @@ export default function initCarousel({
     active = active === initialActive ? carouselItems.length : active - 1;
     scrollToActive();
   }
+  function handleSlide(direction: 'left' | 'right' | 'up' | 'down') {
+    if (direction === 'left') {
+      nextSlide();
+    } else if (direction === 'right') {
+      prevSlide();
+    }
+  }
+  touch(carouselSelector, handleSlide);
 }
