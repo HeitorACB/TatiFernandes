@@ -116,7 +116,7 @@ export const carouselTeamItems: CarouselTeamItem[] = [
 
 type CarouselTrainingItem = CarouselTeamItem & {
   aspectRatio: number;
-}
+};
 
 export const carouselTrainingsItems: CarouselTrainingItem[] = [
   {
@@ -124,34 +124,41 @@ export const carouselTrainingsItems: CarouselTrainingItem[] = [
     description:
       'Vença a principal barreira para se tornar médico nos EUA em 9 meses com um curso extensivo em inglês e português baseado em didática simples e múltiplas revisões, dado por professores com as maiores notas do Brasil.',
     img: 'rd-step-1',
-    aspectRatio: 1
+    aspectRatio: 1,
   },
   {
     title: 'English, MD',
     description:
       'Inglês real do dia a dia médico americano, do básico ao avançado, com estudos de textos, flash cards, exercícios e 2 encontros ao vivo de conversação semanal. É a sua preparação perfeita para os estágios, pesquisa e residência médica nos EUA.',
     img: 'english-md',
-    aspectRatio: 2.1
+    aspectRatio: 2.1,
   },
   {
     title: 'Você Médico nos EUA',
     description:
       'Mentoria personalizada e detalhada do inicio ao fim do seu processo de validação. O VMEUA ensina todo o processo, promove mesas redondas e meetings de networking, te posiciona nos estágios, cuida da sua aplicação para a residência e te treina para as entrevistas.',
     img: 'voce-medico-nos-eua',
-    aspectRatio: 1
+    aspectRatio: 1,
   },
   {
     title: 'RD Clerkship and Observership Program',
     description:
       'a RD med busca as oportunidades de estágios nos EUA de acordo com o seu perfil, cuida da sua documentação de aplicação e escreve os modelos de email para você enviar aos departamentos.',
     img: 'rd-clerkship-and-observership-program',
-    aspectRatio: 1.49
+    aspectRatio: 1.49,
   },
   {
     title: 'RD Research Fellow Program',
     description:
       'Procuramos oportunidades remuneradas ou não de pesquisa nos EUA. Em geral são programas de 1 ano e você não precisa ter o diploma validado. Uma oportunidade de fortalecer muito a sua aplicação para especialidades competitivas ou especialidades menos concorridas',
     img: 'rd-research-fellow-program',
-    aspectRatio: 1.26
+    aspectRatio: 1.26,
+  },
+  {
+    title: 'Time do Match',
+    description:
+      'Nós cuidamos de tudo multiplicar as suas chances e evitar erros no momento crucial da aplicação. O time do match conta com mentores que são Diretores de Programa de residência nos EUA, Diretores de internato (clerkship) nos EUA e muito mais.',
+    img: 'time-do-match',
+    aspectRatio: 2.08,
   },
 ];

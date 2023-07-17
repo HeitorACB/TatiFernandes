@@ -24,17 +24,17 @@ export default function initCarousel({
       .querySelector(selector)!
       .addEventListener('click', index ? nextSlide : prevSlide);
   });
-    window.addEventListener('resize', () => {
-      itemWidth = document.querySelector(`${carouselSelector} *`)!.clientWidth;
-      if(!ignoreScrollEnd) {
-        const previousInitialActive = initialActive;
-        initialActive = Math.floor(
-          document.querySelector(carouselSelector)!.clientWidth /
-            (itemWidth + itemSpacing),
-        );
-        active = active + initialActive - previousInitialActive;
-      }
-    });
+  window.addEventListener('resize', () => {
+    itemWidth = document.querySelector(`${carouselSelector} *`)!.clientWidth;
+    if (!ignoreScrollEnd) {
+      const previousInitialActive = initialActive;
+      initialActive = Math.floor(
+        document.querySelector(carouselSelector)!.clientWidth /
+          (itemWidth + itemSpacing),
+      );
+      active = active + initialActive - previousInitialActive;
+    }
+  });
   let initialActive = ignoreScrollEnd
     ? 1
     : Math.floor(

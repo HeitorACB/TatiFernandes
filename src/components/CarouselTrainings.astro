@@ -7,69 +7,89 @@ import { Image } from '@astrojs/image/components';
 import { carouselTrainingsButtons, carouselTrainingsItems } from 'carouselData';
 ---
 
-<div class="flex items-center container gap-x-6">
-  <button
-    id={`${id}-button-0`}
-    class="flex items-center justify-center min-w-[56px] min-h-[56px] rounded-full"
+<div class="sm:container pl-4">
+  <div
+    class="flex items-center justify-end max-w-full flex-wrap sm:flex-nowrap gap-y-4"
   >
-    <svg
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
+    <button
+      id={`${id}-button-0`}
+      class="order-1 flex items-center justify-center min-w-[56px] max-w-[56px] max-h-[56px] min-h-[56px] rounded-full mr-4 sm:mr-8"
     >
-      <path
-        d={carouselTrainingsButtons[0].icon}
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"></path>
-    </svg>
-    <span class="sr-only">{carouselTrainingsButtons[0].label}</span>
-  </button>
-  <div class="relative w-[calc(100%-112px)] flex items-center">
-    <div id={`${id}-fade-left`} style="background: linear-gradient(270deg, rgba(26, 33, 69, 0.00) 6.25%, #000830 100%);" class="w-[100px] h-full absolute left-0 top-0 z-[4]" />
-    <div id={id} class="flex overflow-x-hidden w-full gap-x-8" >
-      {
-        carouselTrainingsItems.map(({ img, title, description, aspectRatio }) => (
-          <div slot="item" class="flex gap-x-4 min-w-[340px] lg:min-w-[385px] py-4 pl-5 pr-10 rounded-3xl">
-            <div class="bg-white rounded-full min-w-[44px] max-w-[44px] p-1 h-11 flex items-center justify-center">
-              <Image
-                src={`/images/trainings/${img}.png`}
-                alt={`Foto do treinamento ${title.replace(/,.*$/, '')}`}
-                width={112}
-                height={Math.round(112 / aspectRatio)}         
-                format="webp"
-                class="rounded-full"
-              />
-            </div>
-            <div>
-              <p class="font-semibold leading-5 mb-1">{title}</p>
-              <p class="text-gray-400 leading-5 text-xs">{description}</p>
-            </div>
-          </div>
-        ))
-      }
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+      >
+        <path
+          d={carouselTrainingsButtons[0].icon}
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"></path>
+      </svg>
+      <span class="sr-only">{carouselTrainingsButtons[0].label}</span>
+    </button>
+    <div class="order-4 sm:order-2 flex-grow overflow-hidden">
+      <div class="relative max-w-full flex items-center">
+        <div
+          id={`${id}-fade-left`}
+          style="background: linear-gradient(270deg, rgba(26, 33, 69, 0.00) 6.25%, #000830 100%);"
+          class="w-[100px] hidden sm:block h-full absolute left-0 top-0 z-[4]"
+        >
+        </div>
+        <div id={id} class="flex overflow-x-hidden w-full gap-x-8">
+          {
+            carouselTrainingsItems.map(
+              ({ img, title, description, aspectRatio }) => (
+                <div class="flex gap-x-2 min-w-[330px] md:min-w-[385px] py-4 pl-5 pr-10 rounded-3xl bg-[#12193E]">
+                  <div class="bg-white rounded-full min-w-[44px] max-w-[44px] p-1 h-11 flex items-center justify-center">
+                    <Image
+                      src={`/images/trainings/${img}.png`}
+                      alt={`Foto do treinamento ${title.replace(/,.*$/, '')}`}
+                      width={112}
+                      height={Math.round(112 / aspectRatio)}
+                      format="webp"
+                      class="rounded-full"
+                    />
+                  </div>
+                  <div>
+                    <p class="font-semibold leading-5 mb-1 max-w-[232px]">
+                      {title}
+                    </p>
+                    <p class="text-gray-400 leading-5 text-xs">{description}</p>
+                  </div>
+                </div>
+              ),
+            )
+          }
+        </div>
+        <div
+          id={`${id}-fade-right`}
+          style="background: linear-gradient(270deg, #000830 6.25%, rgba(26, 33, 69, 0.00) 100%);"
+          class="w-[100px] hidden sm:block h-full absolute right-0 top-0 z-[4]"
+        >
+        </div>
+      </div>
     </div>
-    <divi id={`${id}-fade-right`} style="background: linear-gradient(270deg, #000830 6.25%, rgba(26, 33, 69, 0.00) 100%);" class="w-[100px] h-full absolute right-0 top-0 z-[4]" />
-  </div>
-  <button
-    id={`${id}-button-1`}
-    class="flex items-center justify-center min-w-[56px] min-h-[56px] rounded-full"
-  >
-    <svg
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
+    <button
+      id={`${id}-button-1`}
+      class="order-2 sm:order-3 flex items-center justify-center min-w-[56px] max-w-[56px] max-h-[56px] min-h-[56px] rounded-full sm:ml-8 mr-4"
     >
-      <path
-        d={carouselTrainingsButtons[1].icon}
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"></path>
-    </svg>
-    <span class="sr-only">{carouselTrainingsButtons[1].label}</span>
-  </button>
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+      >
+        <path
+          d={carouselTrainingsButtons[1].icon}
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"></path>
+      </svg>
+      <span class="sr-only">{carouselTrainingsButtons[1].label}</span>
+    </button>
+  </div>
 </div>
