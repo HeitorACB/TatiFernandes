@@ -1,12 +1,14 @@
 ---
-export interface Props {
+export interface Props extends astroHTML.JSX.HTMLAttributes {
   className?: string;
+  class?: never;
 }
 
-const { className } = Astro.props;
+const { className, ...rest } = Astro.props;
 ---
 
 <section
+  {...rest}
   class={`bg-[#000830] w-full py-14 md:py-[72px] lg:py-24 relative z-[1] ${
     className || ''
   }`}

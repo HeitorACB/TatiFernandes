@@ -78,7 +78,7 @@ export default function Trainings() {
     triggerActive(0);
   });
   return (
-    <section class="relative z-[1] w-full bg-[#000830] py-24">
+    <section class="relative z-[1] w-full bg-[#000830] py-24" id="training">
       <div class="relative z-[2]">
         <div class="container mb-16">
           <div class="mx-auto max-w-[930px] md:text-center">
@@ -115,7 +115,7 @@ export default function Trainings() {
       <img
         class="absolute left-0 top-0 z-[1]"
         src="/images/trainings-draw-line-1.png"
-        alt="padrào de linhas de fundo"
+        alt="padrão de linhas de fundo"
         width={398}
         height={436}
       />
