@@ -1,6 +1,6 @@
 ---
 import Section from './Section.astro';
-import { Image } from '@astrojs/image/components';
+import { Picture } from '@astrojs/image/components';
 
 const numbers = [
   {
@@ -24,15 +24,18 @@ const numbers = [
 
 <Section className="bg-[#000C46]">
   <div class="container">
-    <div class="flex flex-col xl:flex-row-reverse gap-x-16 xl:mb-16">
-      <Image
+    <div
+      class="flex flex-col xl:flex-row-reverse gap-x-16 xl:mb-16 items-center"
+    >
+      <Picture
         src="/images/dr-rafael.png"
         format="webp"
         alt="Foto do Dr Rafael"
         quality={95}
-        width={576}
-        height={724}
-        class="lg:w-[448px] xl:w-[576px] self-center px-12 md:px-0"
+        widths={[576, 480, 448, 372]}
+        sizes="(max-width: 640px) 372px, (max-width: 768px) 480px, (max-width: 1024px) 576px, (max-width: 1280px) 448px, 576px"
+        aspectRatio={0.795}
+        class="lg:min-w-[448px] xl:min-w-[576px] px-12 md:px-0"
       />
       <div>
         <h2
