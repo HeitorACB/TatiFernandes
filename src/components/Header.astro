@@ -19,8 +19,8 @@ import { Image } from '@astrojs/image/components';
     />
   </div>
   <nav class="flex gap-x-14 text-sm relative">
-    <button id="menu-button" class="lg:hidden flex gap-x-2 items-center"
-      ><svg
+    <button id="menu-button" class="lg:hidden flex gap-x-2 items-center">
+      <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
         height="24"
@@ -33,22 +33,47 @@ import { Image } from '@astrojs/image/components';
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"></path>
-      </svg>Menu</button
-    >
+      </svg>
+      <span class="pt-BR">Menu</span>
+      <span class="en">Menu</span>
+    </button>
     <ul
       class="flex-col w-[340px] lg:w-[unset] top-6 absolute bg-white lg:bg-transparent text-black lg:text-white right-0 lg:static lg:flex-row hidden bg-transparent capitalize lg:flex rounded-lg lg:rounded-none shadow-2xl lg:shadow-none transition-all duration-500 ease-in-out"
     >
-      <li class="p-6"><a href="#">diferenciais</a></li>
-      <li class="p-6"><a href="#">nossa equipe</a></li>
-      <li class="p-6"><a href="#">nossos treinamentos</a></li>
-      <li class="p-6"><a href="#">sobre a RD Medicine</a></li>
+      <li class="p-6">
+        <a href="#">
+          <span class="pt-BR">diferenciais</span>
+          <span class="en">features</span>
+        </a>
+      </li>
+      <li class="p-6">
+        <a href="#">
+          <span class="pt-BR">nossa equipe</span>
+          <span class="en">our team</span>
+        </a>
+      </li>
+      <li class="p-6">
+        <a href="#">
+          <span class="pt-BR">nossos treinamentos</span>
+          <span class="en">our trainings</span>
+        </a>
+      </li>
+      <li class="p-6">
+        <a href="#">
+          <span class="pt-BR">sobre a RD Medicine</span>
+          <span class="en">about RD Medicine</span>
+        </a>
+      </li>
       <li class="p-6 lg:py-6 lg:px-0 xl:p-6">
         <a
-          class="rounded-[70px] border-[2px] lg:border-white border-[#203DE2] lg:text-white text-[#203DE2] py-3 px-12 px-14 text-sm leading-6"
+          class="rounded-[70px] border-[2px] lg:border-white border-[#203DE2] lg:text-white text-[#203DE2] py-3 px-12 md:px-14 text-sm leading-6"
           href="https://rdmedicine.cademi.com.br/"
           rel="noopener noreferrer"
-          target="_blank">Acessar</a
+          target="_blank"
         >
+          <span class="pt-BR">Acessar</span>
+          <span class="en">Access</span>
+        </a>
       </li>
     </ul>
   </nav>

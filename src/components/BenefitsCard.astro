@@ -1,7 +1,7 @@
 ---
-import BenefitsCardIcon from './BenefitsCardIcon.astro';
+import BenefitsCardIcon, { CardIcon } from './CardIcon.astro';
 export interface Props {
-  type: 'pen' | 'people' | 'graduate' | 'chart';
+  type: CardIcon;
 }
 
 const { type } = Astro.props;

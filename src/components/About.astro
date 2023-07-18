@@ -1,23 +1,28 @@
 ---
 import Section from './Section.astro';
 import { Picture } from '@astrojs/image/components';
+import { aboutParagraph } from 'data/about';
 
 const numbers = [
   {
     number: '400+',
     description: 'Exemplo',
+    descriptionEn: 'example',
   },
   {
     number: '600%',
     description: 'Exemplo',
+    descriptionEn: 'example',
   },
   {
     number: '10k',
     description: 'Exemplo',
+    descriptionEn: 'example',
   },
   {
     number: '200+',
     description: 'Exemplo',
+    descriptionEn: 'example',
   },
 ];
 ---
@@ -41,38 +46,24 @@ const numbers = [
         <h2
           class="text-white text-4xl font-bold leading-[44px] uppercase font-title tracking-[-0.72px] mb-5"
         >
-          sobre a <span class="text-[#FF3158] underline">RD medicine</span>
+          <span class="pt-BR">
+            sobre a <span class="text-[#FF3158] underline">RD medicine</span>
+          </span>
+          <span class="en">
+            about <span class="text-[#FF3158] underline">RD medicine</span>
+          </span>
         </h2>
         <article
           class="text-gray-300 leading-6 md:leading-[30px] font-normal md:text-xl space-y-3"
         >
-          <p>
-            Acreditamos que a medicina brasileira pode conquistar o mundo. Ter
-            uma experiência de treinamento real nos EUA seja para continuar no
-            país ou para voltar ao Brasil irá marcar a sua carreira médica para
-            sempre e abrir a sua cabeça para novas culturas e novas
-            possibilidades. Num ambiente saturado o médico engajado
-            internacionalmente é diferente, ele sai da multidão e conquista o
-            seu valor. A RD med acredita fortemente que existe uma versão sua
-            que pode ser bilíngue, multicultural, criativo, empreendedor,
-            diferenciado, e próspero.
-          </p>
-          <p>
-            A verdade é que ao longo da carreira o médico tem sede de
-            crescimento, profissional e financeiro, crescimento em conhecimento
-            e reconhecimento social, e investe tudo nesse empreendimento, porém
-            uma minoria alcança o que idealizou previamente. A RD med visualiza
-            a validação do seu diploma médico nos EUA como o investimento mais
-            certeiro para te potencializar e, de uma vez por todas, coroar todo
-            o seu esforço desde o dia em que você decidiu ser médico.
-          </p>
-          <p>
-            Nossa visão está em um médico brasileiro que abraça o desafio de ser
-            a sua melhor versão, para então oferecer o melhor aos seus
-            pacientes, ao seu país e à sua família. Impactar a sua vida e
-            carreira certamente é o nosso sonho, porque sabemos que com isso,
-            impactaremos também toda uma geração.
-          </p>
+          {
+            aboutParagraph.map(({ paragraph, paragraphEn }) => (
+              <p>
+                <span class="pt-BR">{paragraph}</span>
+                <span class="en">{paragraphEn}</span>
+              </p>
+            ))
+          }
         </article>
       </div>
     </div>
@@ -80,18 +71,22 @@ const numbers = [
       <h2
         class="text-white text-4xl font-semibold leading-[44px] tracking-[-0.72px] mb-8 md:mb-9 lg:mb-16"
       >
-        Estamos apenas começando...
+        <span class="pt-BR"> Estamos apenas começando...</span>
+        <span class="en"> we are just getting started</span>
       </h2>
       <div
         class="grid grid-cols-2 gap-4 lg:w-full lg:flex lg:justify-between lg:max-w-[1200px]"
       >
         {
-          numbers.map(({ number, description }) => (
+          numbers.map(({ number, description, descriptionEn }) => (
             <div class="flex flex-col gap-y-3">
               <span class="text-6xl font-semibold leading-[1.2] tracking-[-1.2px] text-[#FF3158]">
                 {number}
               </span>
-              <span class="text-lg leading-7">{description}</span>
+              <span class="text-lg leading-7">
+                <span class="pt-BR">{description}</span>
+                <span class="en">{descriptionEn}</span>
+              </span>
             </div>
           ))
         }

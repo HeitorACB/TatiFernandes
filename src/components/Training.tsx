@@ -2,7 +2,7 @@ import 'solid-js';
 import { createSignal, onMount } from 'solid-js';
 
 import carouseInit from 'utils/carousel';
-import { carouselTrainingsItems, carouselTeamButtons } from 'carouselData';
+import { carouselTrainingsItems, carouselTeamButtons } from 'data/carousel';
 import CarouselTrainings from './CarouselTrainings';
 
 export default function Trainings() {
@@ -83,17 +83,33 @@ export default function Trainings() {
         <div class="container mb-16">
           <div class="mx-auto max-w-[930px] md:text-center">
             <h2 class="mb-5 font-title text-3xl font-bold uppercase leading-[44px] md:text-4xl">
-              Nossos <span class="text-[#FF3158] underline">treinamentos</span>
+              <span class="pt-BR">
+                Nossos{' '}
+                <span class="text-[#FF3158] underline">treinamentos</span>
+              </span>
+              <span class="en">
+                our <span class="text-[#FF3158] underline">trainings</span>
+              </span>
             </h2>
             <h3 class="hidden text-gray-300 md:block">
-              A RD Med te prepara para as provas, te ensina inglês para a vida e
-              para os estágios e te mentora passo a passo no processo, gerando
-              networking, te posicionando nos estágios e cuidando de todos os
-              detalhes da sua aplicação. Confira cada um dos nossos
-              treinamentos:
+              <span class="pt-BR">
+                A RD Med te prepara para as provas, te ensina inglês para a vida
+                e para os estágios e te mentora passo a passo no processo,
+                gerando networking, te posicionando nos estágios e cuidando de
+                todos os detalhes da sua aplicação. Confira cada um dos nossos
+                treinamentos:
+              </span>
+              <span class="en">
+                RD Med prepares you for exams, teaches you English for life and
+                for internships and mentors you step by step through the
+                process, generating networking, positioning you in internships
+                and taking care of all the details of your application. Check
+                out each of our trainings:
+              </span>
             </h3>
           </div>
         </div>
+
         <CarouselTrainings id="trainingCarousel" />
       </div>
       <img

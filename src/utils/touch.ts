@@ -24,7 +24,7 @@ export default function init(
 
     const xDiff = xDown - xUp;
     const yDiff = yDown - yUp;
-    if (Math.abs(xDiff) + Math.abs(yDiff) > 100) {
+    if (Math.abs(xDiff) + Math.abs(yDiff) > 70) {
       if (Math.abs(xDiff) > Math.abs(yDiff)) {
         if (xDiff > 0) {
           callback('left');

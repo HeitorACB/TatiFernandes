@@ -2,7 +2,7 @@
 import { Image } from '@astrojs/image/components';
 import Carousel from './CarouselScreen.astro';
 import Section from './Section.astro';
-import { carouselTeamButtons, carouselTeamItems } from 'carouselData';
+import { carouselTeamButtons, carouselTeamItems } from 'data/carousel';
 ---
 
 <Section className="bg-[#000C46]">
@@ -10,10 +10,17 @@ import { carouselTeamButtons, carouselTeamItems } from 'carouselData';
     <h2
       class="font-bold font-title text-2xl sm:text-4xl uppercase relative ml-3 sm:ml-0"
     >
-      Nossa equipe de <span
-        class="text-[#FF3158] underline text-3xl sm:text-4xl"
-        >especialistas</span
-      >
+      <span class="pt-BR">
+        Nossa equipe de <span
+          class="text-[#FF3158] underline text-3xl sm:text-4xl"
+          >especialistas</span
+        >
+      </span>
+      <span class="en">
+        Our team of <span class="text-[#FF3158] underline text-3xl sm:text-4xl"
+          >specialist</span
+        >
+      </span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="80"
@@ -76,7 +83,7 @@ import { carouselTeamButtons, carouselTeamItems } from 'carouselData';
   </div>
   <Carousel id="teamCarousel" spacing="gap-x-8">
     {
-      carouselTeamItems.map(({ img, title, description }) => (
+      carouselTeamItems.map(({ img, title, description, descriptionEn }) => (
         <div class="flex flex-col gap-y-6 items-stretch bg-[#000C46]">
           <Image
             class="max-w-none"
@@ -88,7 +95,10 @@ import { carouselTeamButtons, carouselTeamItems } from 'carouselData';
             format="webp"
           />
           <p class="text-xl font-semibold">{title}</p>
-          <p class="text-gray-400">{description}</p>
+          <p class="text-gray-400">
+            <span class="pt-BR">{description}</span>
+            <span class="en">{descriptionEn}</span>
+          </p>
         </div>
       ))
     }
@@ -96,7 +106,7 @@ import { carouselTeamButtons, carouselTeamItems } from 'carouselData';
 </Section>
 <script>
   import carouseInit from 'utils/carousel';
-  import { carouselTeamItems, carouselTeamButtons } from 'carouselData';
+  import { carouselTeamItems, carouselTeamButtons } from 'data/carousel';
   carouseInit({
     carouselItems: carouselTeamItems,
     buttonSelectors: carouselTeamButtons.map(

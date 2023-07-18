@@ -1,6 +1,7 @@
 ---
+export type CardIcon = 'pen' | 'people' | 'graduate' | 'chart';
 export interface Props {
-  type: 'pen' | 'people' | 'graduate' | 'chart';
+  type: CardIcon;
 }
 
 const { type } = Astro.props;
