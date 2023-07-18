@@ -23,13 +23,17 @@ export default function Trainings() {
       document.querySelector('#trainingCarousel')!.clientWidth /
         (document.querySelector('#trainingCarousel *')!.clientWidth + 32),
     );
-    window.addEventListener('resize', () => {
-      shownItems = Math.floor(
-        document.querySelector('#trainingCarousel')!.clientWidth /
-          (document.querySelector('#trainingCarousel *')!.clientWidth + 32),
-      );
-      handleFade();
-    });
+    window.addEventListener(
+      'resize',
+      () => {
+        shownItems = Math.floor(
+          document.querySelector('#trainingCarousel')!.clientWidth /
+            (document.querySelector('#trainingCarousel *')!.clientWidth + 32),
+        );
+        handleFade();
+      },
+      { passive: true },
+    );
 
     function handleFade() {
       const isMobile = window.innerWidth < 640;
