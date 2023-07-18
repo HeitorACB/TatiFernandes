@@ -11,22 +11,19 @@ module.exports = {
         white: '#F7F7F7',
         black: '#202020',
       },
-      screens: {
-      },
+      screens: {},
       container: {
         center: true,
         screens: {
-          sm: '100%',
-          md: '100%',
+          md: '768px',
           lg: '1024px',
-          xl: '1366px',
+          xl: '1280px',
         },
         padding: {
           DEFAULT: '1rem',
-          sm: '2rem',
           md: '2rem',
           lg: '2rem',
-          xl: '1rem',
+          xl: '2rem',
         },
       },
       fontFamily: {

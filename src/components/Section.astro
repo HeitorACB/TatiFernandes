@@ -6,6 +6,10 @@ export interface Props {
 const { className } = Astro.props;
 ---
 
-<section class={`bg-[#000830] w-full py-24 relative z-[1] ${className || ''}`}>
+<section
+  class={`bg-[#000830] w-full py-14 md:py-[72px] lg:py-24 relative z-[1] ${
+    className || ''
+  }`}
+>
   <slot />
 </section>

@@ -19,8 +19,6 @@ export default function Trainings() {
       ignoreScrollEnd: true,
     });
 
-    console.log('exec');
-
     let shownItems = Math.floor(
       document.querySelector('#trainingCarousel')!.clientWidth /
         (document.querySelector('#trainingCarousel *')!.clientWidth + 32),

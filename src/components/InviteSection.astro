@@ -1,0 +1,41 @@
+---
+import CTA from './CTA.astro';
+import Section from './Section.astro';
+---
+
+<Section
+  className="bg-gradient-to-b from-[#001473] to-[#000E53] py:0 lg:py-0 md:py-0"
+>
+  <div
+    class="lg:bg-[url('/images/invite-elipse-desktop.webp')] md:bg-[url('/images/invite-elipse-tablet.webp')] bg-[url('/images/invite-elipse-mobile.webp')] w-full bg-no-repeat bg-center bg-contain lg:bg-auto"
+  >
+    <div class="container text-center py-14 md:py-[72px] lg:py-24">
+      <h2
+        class="text-4xl mb-4 lg:mb-5 md:mb-8 font-semibold leading-[44px] uppercase tracking-[-0.72px] font-title"
+      >
+        Vamos <span class="text-[#FF3158] underline">juntos?</span>
+      </h2>
+      <article
+        class="space-y-6 md:space-y-[30px] text-gray-300 text-base font-normal leading-normal md:text-xl mx-auto lg:max-w-[940px] lg:mb-16 md:mb-14"
+      >
+        <p>
+          Por muito tempo se tornar médico nos EUA não era algo acessível. Era
+          algo solitário e encoberto, e muitos desistiam por concluírem que
+          seria uma batalha perdida, que se esforçariam muito por algo
+          impossível. Hoje isso mudou e milhares de brasileiros estão alcançando
+          uma vida diferente como médicos na América, alcançando respeito,
+          qualidade de vida, segurança e os maiores salários médicos do mundo.
+        </p>
+        <p>
+          A RD med vai te ensinar o processo, te ensinar a ultrapassar a
+          primeira e mais difícil etapa (Step 1), organizar seu dia a dia de
+          estudos, te ensinar inglês, te posicionar nos estágios, gerar
+          networking, cuidar da sua aplicação e te treinar para as entrevistas.
+          Não há nada nesse processo que não esteja previsto dentro da RD, como
+          uma solução eficaz para te fazer alcançar a carreira dos seus sonhos.
+        </p>
+      </article>
+      <CTA className="hidden md:inline">Quero fazer parte</CTA>
+    </div>
+  </div>
+</Section>
