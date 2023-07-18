@@ -4,10 +4,10 @@ export default function init(
 ) {
   document
     .querySelector(selector)!
-    .addEventListener('touchstart', handleTouchStart, false);
+    .addEventListener('touchstart', handleTouchStart, { passive: true });
   document
     .querySelector(selector)!
-    .addEventListener('touchmove', handleTouchMove, false);
+    .addEventListener('touchmove', handleTouchMove, { passive: true });
   let xDown: null | number = null;
   let yDown: null | number = null;
   function handleTouchStart(event: Event) {

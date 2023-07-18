@@ -22,7 +22,9 @@ export default function initCarousel({
   buttonSelectors.forEach((selector, index) => {
     document
       .querySelector(selector)!
-      .addEventListener('click', index ? nextSlide : prevSlide);
+      .addEventListener('click', index ? nextSlide : prevSlide, {
+        passive: true,
+      });
   });
   window.addEventListener(
     'resize',
