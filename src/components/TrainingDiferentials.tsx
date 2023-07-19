@@ -1,3 +1,4 @@
+import 'solid-js';
 import CardIcon from './CardIcon';
 
 import { carouselTrainingsItems } from 'data/carousel';

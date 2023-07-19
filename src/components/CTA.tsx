@@ -4,7 +4,7 @@ import type { ComponentWithChildren } from 'ts-utils';
 const CTA: ComponentWithChildren<{ className?: string }> = (props) => {
   return (
     <button
-      class={`rounded-[70px] bg-[#203DE2] px-7 py-3 text-sm font-semibold leading-6  ${
+      class={`min-w-[217px] rounded-[70px] bg-[#203DE2] py-3 text-center text-sm font-semibold leading-6  ${
         props.className || ''
       }`}
     >

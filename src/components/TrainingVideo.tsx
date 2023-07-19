@@ -1,3 +1,4 @@
+import 'solid-js';
 export default function TrainingVideo(props: {
   id: string;
   className?: string;

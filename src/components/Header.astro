@@ -21,8 +21,11 @@ import { Image } from '@astrojs/image/components';
   <nav class="flex gap-x-14 lg:gap-x-6 text-sm relative">
     <button
       id="btn-lang"
+      title="Alterar idioma"
       class="xl:text-3xl lg:text-2xl text-3xl lg:order-1 -order-1"
-      ><span class="pt-BR">🇧🇷</span><span class="en">🇺🇸</span></button
+      ><span class="pt-BR">🇧🇷</span><span class="en">🇺🇸</span><span
+        class="sr-only">Alterar idioma</span
+      ></button
     >
     <button id="menu-button" class="lg:hidden flex gap-x-2 items-center">
       <svg

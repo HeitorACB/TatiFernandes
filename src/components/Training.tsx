@@ -7,6 +7,8 @@ import CarouselTrainings from './CarouselTrainings';
 import TrainingPresentation from './TrainingPresentation';
 import TrainingModules from './TrainingModules';
 import TrainingDifferentials from './TrainingDiferentials';
+import TrainingTestimonials from './TrainingTestimonials';
+import CTA from './CTA';
 
 export default function Trainings() {
   const [active, setActive] = createSignal(0);
@@ -120,6 +122,29 @@ export default function Trainings() {
         <TrainingPresentation id={active()} />
         <TrainingModules id={active()} />
         <TrainingDifferentials id={active()} />
+        <TrainingTestimonials id={active()} />
+        <div class="container mt-10 flex w-full flex-col items-center justify-center">
+          <CTA>Quero fazer parte</CTA>
+          <a class="mb-9 mt-16 inline-flex gap-x-2 px-5 py-3" href="#training">
+            <span>Voltar para seleção de treinamentos</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              fill="none"
+            >
+              <path
+                d="M18.5 15L12.5 9L6.5 15"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <hr class="max-h-0 w-full border-t border-[#293b71]" />
+        </div>
       </div>
       <img
         class="absolute left-0 top-0 z-[1]"

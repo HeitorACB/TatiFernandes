@@ -21,6 +21,7 @@ export default function Training(props: { id: number }) {
               width={91}
               height={91}
               class="h-[91px] w-[91px] rounded-full"
+              loading="lazy"
             />
           </div>
           <h3 class="font-title text-3xl uppercase">

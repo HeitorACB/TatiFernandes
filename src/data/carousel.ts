@@ -34,6 +34,17 @@ export const carouselModuleButtons = [
   },
 ];
 
+export const carouselTestimonialsButtons = [
+  {
+    label: 'depoimento anterior',
+    icon: prevIcon,
+  },
+  {
+    label: 'próximo depoimento',
+    icon: nextIcon,
+  },
+];
+
 type CarouselTeamItem = {
   title: string;
   titleEn?: string;
