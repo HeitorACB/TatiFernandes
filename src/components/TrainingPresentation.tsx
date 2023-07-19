@@ -51,7 +51,7 @@ export default function Training(props: { id: number }) {
           )}`}
           width={280}
           height={296}
-          class="mb-4 h-[280px] w-[296px] rounded-full md:mb-0"
+          class="mb-4 h-[296px] w-[280px] rounded-full md:mb-0"
         />
         <div class="space-y-2">
           <p class="text-xl uppercase leading-normal">
