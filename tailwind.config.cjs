@@ -4,13 +4,6 @@ module.exports = {
 
   theme: {
     extend: {
-      colors: {
-        primary: '#FF2C46',
-        primaryAlt: '#ED2839',
-        primaryAltDark: '#C0162A',
-        white: '#F7F7F7',
-        black: '#202020',
-      },
       screens: {},
       container: {
         center: true,

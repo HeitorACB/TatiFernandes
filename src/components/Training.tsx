@@ -4,6 +4,8 @@ import { createSignal, onMount } from 'solid-js';
 import carouseInit from 'utils/carousel';
 import { carouselTrainingsItems, carouselTeamButtons } from 'data/carousel';
 import CarouselTrainings from './CarouselTrainings';
+import TrainingPresentation from './TrainingPresentation';
+import TrainingModules from './TrainingModules';
 
 export default function Trainings() {
   const [active, setActive] = createSignal(0);
@@ -113,8 +115,9 @@ export default function Trainings() {
             </h3>
           </div>
         </div>
-
         <CarouselTrainings id="trainingCarousel" />
+        <TrainingPresentation id={active()} />
+        <TrainingModules id={active()} />
       </div>
       <img
         class="absolute left-0 top-0 z-[1]"
