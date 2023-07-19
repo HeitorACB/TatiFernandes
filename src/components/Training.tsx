@@ -3,7 +3,7 @@ import { createSignal, onMount } from 'solid-js';
 
 import carouseInit from 'utils/carousel';
 import { carouselTeamButtons } from 'data/carousel';
-import CarouselTrainings from './CarouselTrainings';
+import CarouselTrainings from './TrainingCarousel';
 import TrainingPresentation from './TrainingPresentation';
 import TrainingModules from './TrainingModules';
 import TrainingDifferentials from './TrainingDiferentials';
@@ -13,8 +13,12 @@ import { trainings } from 'data/training';
 
 export default function Trainings() {
   const [active, setActive] = createSignal(0);
+  const [handleChangeToActive, setHandleChangeToActive] = createSignal<
+    (index: number) => void
+  >(() => {});
+
   onMount(() => {
-    carouseInit({
+    const changeActive = carouseInit({
       carouselItems: trainings,
       buttonSelectors: carouselTeamButtons.map(
         (_, index) => `#trainingCarousel-button-${index}`,
@@ -24,6 +28,7 @@ export default function Trainings() {
       onChange: triggerActive,
       ignoreScrollEnd: true,
     });
+    setHandleChangeToActive(() => changeActive);
 
     let shownItems = Math.floor(
       document.querySelector('#trainingCarousel')!.clientWidth /
@@ -87,6 +92,7 @@ export default function Trainings() {
     }
     triggerActive(0);
   });
+
   return (
     <section class="relative z-[1] w-full bg-[#000830] py-24" id="training">
       <div class="relative z-[2]">
@@ -119,7 +125,10 @@ export default function Trainings() {
             </h3>
           </div>
         </div>
-        <CarouselTrainings id="trainingCarousel" />
+        <CarouselTrainings
+          id="trainingCarousel"
+          cardClickFunction={handleChangeToActive()}
+        />
         <TrainingPresentation id={active()} />
         <TrainingModules id={active()} />
         <TrainingDifferentials id={active()} />

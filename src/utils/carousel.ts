@@ -72,4 +72,11 @@ export default function initCarousel({
     }
   }
   touch(carouselSelector, handleSlide);
+
+  function handleChangeToActive(index: number) {
+    active = index + initialActive;
+    scrollToActive();
+  }
+
+  return handleChangeToActive;
 }

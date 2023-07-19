@@ -1,7 +1,10 @@
 import { carouselTrainingsButtons } from 'data/carousel';
 import { trainings } from 'data/training';
 
-export default function CarouselTrainings(props: { id: string }) {
+export default function CarouselTrainings(props: {
+  id: string;
+  cardClickFunction: (index: number) => void;
+}) {
   return (
     <div class="pl-4 sm:container">
       <div class="flex max-w-full flex-wrap items-center justify-end gap-y-4 sm:flex-nowrap">
@@ -30,12 +33,18 @@ export default function CarouselTrainings(props: { id: string }) {
             <div
               id={`${props.id}-fade-left`}
               style="background: linear-gradient(270deg, rgba(26, 33, 69, 0.00) 6.25%, #000830 100%);"
-              class="absolute left-0 top-0 z-[4] hidden h-full w-[100px] sm:block"
+              class="pointer-events-none absolute left-0 top-0 z-[4] hidden h-full w-[100px] sm:block"
             ></div>
             <div id={props.id} class="flex w-full gap-x-8 overflow-x-hidden">
               {trainings.map(
-                ({ img, name, description, descriptionEn, aspectRatio }) => (
-                  <div class="flex min-w-[330px] gap-x-2 rounded-3xl bg-[#12193E] py-4 pl-5 pr-10 md:min-w-[385px]">
+                (
+                  { img, name, description, descriptionEn, aspectRatio },
+                  index,
+                ) => (
+                  <button
+                    onClick={() => props.cardClickFunction(index)}
+                    class="flex min-w-[330px] gap-x-2 rounded-3xl bg-[#12193E] py-4 pl-5 pr-10 md:min-w-[385px]"
+                  >
                     <div class="flex h-11 min-w-[44px] max-w-[44px] items-center justify-center rounded-full bg-white p-1">
                       <img
                         src={`/images/trainings/${img}.png`}
@@ -54,14 +63,14 @@ export default function CarouselTrainings(props: { id: string }) {
                         <span class="en">{descriptionEn}</span>
                       </p>
                     </div>
-                  </div>
+                  </button>
                 ),
               )}
             </div>
             <div
               id={`${props.id}-fade-right`}
               style="background: linear-gradient(270deg, #000830 6.25%, rgba(26, 33, 69, 0.00) 100%);"
-              class="absolute right-0 top-0 z-[4] hidden h-full w-[100px] sm:block"
+              class="pointer-events-none absolute right-0 top-0 z-[4] hidden h-full w-[100px] sm:block"
             ></div>
           </div>
         </div>
