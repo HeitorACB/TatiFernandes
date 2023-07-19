@@ -21,6 +21,7 @@ export default function TrainingVideo(props: {
             class="pointer z-[2] aspect-video max-w-full"
           />
           <button
+            aria-label="Clique para assistir ao vídeo de apresentação do curso RD Medicine"
             onClick={() => setShowVideo(true)}
             class="absolute left-1/2 top-1/2 z-[3] flex h-14 w-14 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-[#0D16A3]"
           >
