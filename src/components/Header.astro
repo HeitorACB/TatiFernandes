@@ -18,7 +18,12 @@ import { Image } from '@astrojs/image/components';
       class="inline-block h-[61px] w-[61px] align-middle"
     />
   </div>
-  <nav class="flex gap-x-14 text-sm relative">
+  <nav class="flex gap-x-14 lg:gap-x-6 text-sm relative">
+    <button
+      id="btn-lang"
+      class="xl:text-3xl lg:text-2xl text-3xl lg:order-1 -order-1"
+      ><span class="pt-BR">🇧🇷</span><span class="en">🇺🇸</span></button
+    >
     <button id="menu-button" class="lg:hidden flex gap-x-2 items-center">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -89,5 +94,37 @@ import { Image } from '@astrojs/image/components';
   menuButton.addEventListener('click', (event) => {
     menu.classList.toggle('hidden');
     event.stopPropagation();
+  });
+
+  const btnLang = document.querySelector('#btn-lang')!;
+  const style = document.createElement('style')!;
+
+  const pt = `
+    .pt-BR {
+      display: inherit !important;
+    }
+    .en {
+      display: none !important;
+    }
+  `;
+  const en = `
+    .pt-BR {
+      display: none !important;
+    }
+    .en {
+      display: inherit !important;
+    }
+  `;
+
+  btnLang.addEventListener('click', () => {
+    const lang = document.documentElement.lang;
+    if (lang === 'pt-BR') {
+      document.documentElement.lang = 'en';
+      style.innerHTML = en;
+    } else {
+      document.documentElement.lang = 'pt-BR';
+      style.innerHTML = pt;
+    }
+    document.head.appendChild(style);
   });
 </script>

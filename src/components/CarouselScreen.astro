@@ -8,7 +8,7 @@ const { id, spacing } = Astro.props;
 
 <div
   id={id}
-  class={`lg:ml-[calc((100%-1024px)/2)] xl:ml-[calc((100%-1280px)/2)] px-3 mt-14 flex overflow-x-hidden ${spacing} w-full lg:max-w-[calc(1024px+(100%-1024px)/2)] xl:max-w-[calc(1280px+(100%-1280px)/2)]`}
+  class={`md:ml-[calc((100%-768px)/2)] lg:ml-[calc((100%-1024px)/2)] xl:ml-[calc((100%-1280px)/2)] px-3 mt-14 flex overflow-x-hidden ${spacing} w-full md:max-w-[calc(768px+(100%-768px)/2)] lg:max-w-[calc(1024px+(100%-1024px)/2)] xl:max-w-[calc(1280px+(100%-1280px)/2)]`}
 >
   <slot />
 </div>

@@ -47,7 +47,7 @@ export default function TrainingModules(props: { id: number }) {
       </div>
       <div
         id="carousel-training"
-        class="flex w-full gap-x-8 overflow-x-hidden px-3 lg:ml-[calc((100%-1024px)/2)] lg:max-w-[calc(1024px+(100%-1024px)/2)] xl:ml-[calc((100%-1280px)/2)] xl:max-w-[calc(1280px+(100%-1280px)/2)]"
+        class="flex w-full gap-x-8 overflow-x-hidden px-3 md:ml-[calc((100%-768px)/2)] md:max-w-[calc(768px+(100%-768px)/2)] lg:ml-[calc((100%-1024px)/2)] lg:max-w-[calc(1024px+(100%-1024px)/2)] xl:ml-[calc((100%-1280px)/2)] xl:max-w-[calc(1280px+(100%-1280px)/2)]"
       >
         {trainings[props.id].modules.map(
           ({ title, description, titleEn, descriptionEn }, index) => (

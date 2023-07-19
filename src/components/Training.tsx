@@ -6,6 +6,7 @@ import { carouselTrainingsItems, carouselTeamButtons } from 'data/carousel';
 import CarouselTrainings from './CarouselTrainings';
 import TrainingPresentation from './TrainingPresentation';
 import TrainingModules from './TrainingModules';
+import TrainingDifferentials from './TrainingDiferentials';
 
 export default function Trainings() {
   const [active, setActive] = createSignal(0);
@@ -118,6 +119,7 @@ export default function Trainings() {
         <CarouselTrainings id="trainingCarousel" />
         <TrainingPresentation id={active()} />
         <TrainingModules id={active()} />
+        <TrainingDifferentials id={active()} />
       </div>
       <img
         class="absolute left-0 top-0 z-[1]"
