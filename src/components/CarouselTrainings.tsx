@@ -36,14 +36,7 @@ export default function CarouselTrainings(props: { id: string }) {
             ></div>
             <div id={props.id} class="flex w-full gap-x-8 overflow-x-hidden">
               {carouselTrainingsItems.map(
-                ({
-                  img,
-                  title,
-                  description,
-                  titleEn,
-                  descriptionEn,
-                  aspectRatio,
-                }) => (
+                ({ img, title, description, descriptionEn, aspectRatio }) => (
                   <div class="flex min-w-[330px] gap-x-2 rounded-3xl bg-[#12193E] py-4 pl-5 pr-10 md:min-w-[385px]">
                     <div class="flex h-11 min-w-[44px] max-w-[44px] items-center justify-center rounded-full bg-white p-1">
                       <img
@@ -56,8 +49,7 @@ export default function CarouselTrainings(props: { id: string }) {
                     </div>
                     <div>
                       <p class="mb-1 max-w-[232px] font-semibold leading-5">
-                        <span class="pt-BR">{title}</span>
-                        <span class="en">{titleEn}</span>
+                        {title}
                       </p>
                       <p class="text-xs leading-5 text-gray-400">
                         <span class="pt-BR">{description}</span>

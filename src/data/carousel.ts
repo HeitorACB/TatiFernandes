@@ -47,7 +47,6 @@ export const carouselTestimonialsButtons = [
 
 type CarouselTeamItem = {
   title: string;
-  titleEn?: string;
   description: string;
   descriptionEn: string;
   img: string;
@@ -167,7 +166,6 @@ type CarouselTrainingItem = CarouselTeamItem & {
 export const carouselTrainingsItems: CarouselTrainingItem[] = [
   {
     title: 'RD Step 1',
-    titleEn: 'RD Step 1',
     description:
       'Vença a principal barreira para se tornar médico nos EUA em 9 meses com um curso extensivo em inglês e português baseado em didática simples e múltiplas revisões, dado por professores com as maiores notas do Brasil.',
     descriptionEn:
@@ -177,7 +175,6 @@ export const carouselTrainingsItems: CarouselTrainingItem[] = [
   },
   {
     title: 'English, MD',
-    titleEn: 'English, MD',
     description:
       'Inglês real do dia a dia médico americano, do básico ao avançado, com estudos de textos, flash cards, exercícios e 2 encontros ao vivo de conversação semanal. É a sua preparação perfeita para os estágios, pesquisa e residência médica nos EUA.',
     descriptionEn:
@@ -187,7 +184,6 @@ export const carouselTrainingsItems: CarouselTrainingItem[] = [
   },
   {
     title: 'Você Médico nos EUA',
-    titleEn: 'You Doctor in the USA',
     description:
       'Mentoria personalizada e detalhada do inicio ao fim do seu processo de validação. O VMEUA ensina todo o processo, promove mesas redondas e meetings de networking, te posiciona nos estágios, cuida da sua aplicação para a residência e te treina para as entrevistas.',
     descriptionEn:
@@ -197,7 +193,6 @@ export const carouselTrainingsItems: CarouselTrainingItem[] = [
   },
   {
     title: 'RD Clerkship and Observership Program',
-    titleEn: 'RD Clerkship and Observership Program',
     description:
       'a RD med busca as oportunidades de estágios nos EUA de acordo com o seu perfil, cuida da sua documentação de aplicação e escreve os modelos de email para você enviar aos departamentos.',
     descriptionEn:
@@ -207,7 +202,6 @@ export const carouselTrainingsItems: CarouselTrainingItem[] = [
   },
   {
     title: 'RD Research Fellow Program',
-    titleEn: 'RD Research Fellow Program',
     description:
       'Procuramos oportunidades remuneradas ou não de pesquisa nos EUA. Em geral são programas de 1 ano e você não precisa ter o diploma validado. Uma oportunidade de fortalecer muito a sua aplicação para especialidades competitivas ou especialidades menos concorridas',
     descriptionEn:
@@ -217,7 +211,6 @@ export const carouselTrainingsItems: CarouselTrainingItem[] = [
   },
   {
     title: 'Time do Match',
-    titleEn: 'Match Team',
     description:
       'Nós cuidamos de tudo multiplicar as suas chances e evitar erros no momento crucial da aplicação. O time do match conta com mentores que são Diretores de Programa de residência nos EUA, Diretores de internato (clerkship) nos EUA e muito mais.',
     descriptionEn:
