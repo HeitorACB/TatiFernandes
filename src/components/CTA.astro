@@ -1,11 +1,28 @@
 ---
-export interface Props {
+type HTMlElementTypes = astroHTML.JSX.AnchorHTMLAttributes &
+  astroHTML.JSX.ButtonHTMLAttributes;
+export interface Props extends HTMlElementTypes {
   className?: string;
+  class?: never;
 }
 
-const { className = '' } = Astro.props;
+const { className = '', ...rest } = Astro.props;
 ---
 
-<button class={`rounded-[70px] bg-[#203DE2] px-16 py-3 ${className}`}>
-  <slot />
-</button>
+{
+  'href' in rest ? (
+    <a
+      {...rest}
+      class={`rounded-[70px] bg-[#203DE2] px-16 py-3 text-sm ${className}`}
+    >
+      <slot />
+    </a>
+  ) : (
+    <button
+      {...rest}
+      class={`rounded-[70px] bg-[#203DE2] px-16 py-3 text-sm ${className}`}
+    >
+      <slot />
+    </button>
+  )
+}

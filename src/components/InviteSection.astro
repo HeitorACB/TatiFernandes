@@ -23,7 +23,7 @@ import Section from './Section.astro';
         </span>
       </h2>
       <article
-        class="space-y-6 md:space-y-[30px] text-gray-300 text-base font-normal leading-normal md:text-xl mx-auto lg:max-w-[940px] lg:mb-16 md:mb-14"
+        class="space-y-6 md:space-y-[30px] text-gray-300 text-base font-normal leading-normal md:text-xl mx-auto lg:max-w-[940px] lg:mb-16 md:mb-14 mb-8"
       >
         {
           inviteParagraph.map(({ paragraph, paragraphEn }) => (
@@ -34,9 +34,9 @@ import Section from './Section.astro';
           ))
         }
       </article>
-      <CTA className="hidden md:inline">
-        <span class="pt-BR"> Quero fazer parte</span>
-        <span class="en"> I want to be part</span>
+      <CTA>
+        <span class="pt-BR">Quero fazer parte</span>
+        <span class="en">I want to be part</span>
       </CTA>
     </div>
   </div>
