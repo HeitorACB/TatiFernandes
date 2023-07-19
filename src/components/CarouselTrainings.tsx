@@ -1,7 +1,5 @@
-import {
-  carouselTrainingsButtons,
-  carouselTrainingsItems,
-} from 'data/carousel';
+import { carouselTrainingsButtons } from 'data/carousel';
+import { trainings } from 'data/training';
 
 export default function CarouselTrainings(props: { id: string }) {
   return (
@@ -35,13 +33,13 @@ export default function CarouselTrainings(props: { id: string }) {
               class="absolute left-0 top-0 z-[4] hidden h-full w-[100px] sm:block"
             ></div>
             <div id={props.id} class="flex w-full gap-x-8 overflow-x-hidden">
-              {carouselTrainingsItems.map(
-                ({ img, title, description, descriptionEn, aspectRatio }) => (
+              {trainings.map(
+                ({ img, name, description, descriptionEn, aspectRatio }) => (
                   <div class="flex min-w-[330px] gap-x-2 rounded-3xl bg-[#12193E] py-4 pl-5 pr-10 md:min-w-[385px]">
                     <div class="flex h-11 min-w-[44px] max-w-[44px] items-center justify-center rounded-full bg-white p-1">
                       <img
                         src={`/images/trainings/${img}.png`}
-                        alt={`Foto do treinamento ${title.replace(/,.*$/, '')}`}
+                        alt={`Foto do treinamento ${name.replace(/,.*$/, '')}`}
                         width={112}
                         height={Math.round(112 / aspectRatio)}
                         class="rounded-full"
@@ -49,7 +47,7 @@ export default function CarouselTrainings(props: { id: string }) {
                     </div>
                     <div>
                       <p class="mb-1 max-w-[232px] font-semibold leading-5">
-                        {title}
+                        {name}
                       </p>
                       <p class="text-xs leading-5 text-gray-400">
                         <span class="pt-BR">{description}</span>

@@ -1,6 +1,5 @@
 import 'solid-js';
 import { trainings } from 'data/training';
-import { carouselTrainingsItems } from 'data/carousel';
 import CTA from './CTA';
 import TrainingVideo from './TrainingVideo';
 
@@ -11,12 +10,11 @@ export default function Training(props: { id: number }) {
         <div class="flex max-w-full items-center gap-x-2 md:gap-x-4">
           <div class="flex min-h-[65px] min-w-[65px] items-center justify-center rounded-full bg-white md:min-h-[104px] md:min-w-[104px]">
             <img
-              src={`/images/trainings/${
-                carouselTrainingsItems[props.id].img
-              }.png`}
-              alt={`Foto do treinamento ${carouselTrainingsItems[
-                props.id
-              ].title.replace(/,.*$/, '')}`}
+              src={`/images/trainings/${trainings[props.id].img}.png`}
+              alt={`Foto do treinamento ${trainings[props.id].name.replace(
+                /,.*$/,
+                '',
+              )}`}
               width={91}
               height={91}
               class="max-h-[52px] max-w-[52px] rounded-full md:max-h-[91px] md:max-w-[91px]"
@@ -25,7 +23,7 @@ export default function Training(props: { id: number }) {
           </div>
           <div class="max-w-[calc(100%-65px-8px)] md:max-w-[calc(100%-80px-16px)]">
             <h3 class="max-w-[730px] break-words font-title text-xl uppercase md:text-3xl">
-              {carouselTrainingsItems[props.id].title}
+              {trainings[props.id].name}
             </h3>
           </div>
         </div>

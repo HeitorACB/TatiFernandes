@@ -2,19 +2,20 @@ import 'solid-js';
 import { createSignal, onMount } from 'solid-js';
 
 import carouseInit from 'utils/carousel';
-import { carouselTrainingsItems, carouselTeamButtons } from 'data/carousel';
+import { carouselTeamButtons } from 'data/carousel';
 import CarouselTrainings from './CarouselTrainings';
 import TrainingPresentation from './TrainingPresentation';
 import TrainingModules from './TrainingModules';
 import TrainingDifferentials from './TrainingDiferentials';
 import TrainingTestimonials from './TrainingTestimonials';
 import CTA from './CTA';
+import { trainings } from 'data/training';
 
 export default function Trainings() {
   const [active, setActive] = createSignal(0);
   onMount(() => {
     carouseInit({
-      carouselItems: carouselTrainingsItems,
+      carouselItems: trainings,
       buttonSelectors: carouselTeamButtons.map(
         (_, index) => `#trainingCarousel-button-${index}`,
       ),
@@ -45,7 +46,7 @@ export default function Trainings() {
       if (isMobile) {
         return;
       }
-      if (active() < carouselTrainingsItems.length - shownItems) {
+      if (active() < trainings.length - shownItems) {
         document
           .querySelector('#trainingCarousel-fade-left')!
           .classList.add('sm:hidden');

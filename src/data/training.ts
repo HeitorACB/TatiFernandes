@@ -1,6 +1,11 @@
 import type { CardIcon } from 'components/CardIcon';
 
 type TrainingData = {
+  name: string;
+  description: string;
+  descriptionEn: string;
+  img: string;
+  aspectRatio: number;
   coordName: string;
   coordDescription: string;
   coordDescriptionEn: string;
@@ -29,6 +34,13 @@ type TrainingData = {
 
 export const trainings: TrainingData[] = [
   {
+    name: 'RD Step 1',
+    description:
+      'Vença a principal barreira para se tornar médico nos EUA em 9 meses com um curso extensivo em inglês e português baseado em didática simples e múltiplas revisões, dado por professores com as maiores notas do Brasil.',
+    descriptionEn:
+      'Overcome the main barrier to becoming a doctor in the USA in 9 months with an extensive course in English and Portuguese based on simple didactics and multiple revisions, given by professors with the highest grades in Brazil.',
+    img: 'rd-step-1',
+    aspectRatio: 1,
     coordName: 'Mariana Montebeller, MD',
     coordDescription:
       'Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Tepp polyrade rude. Anenade bide i osål Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Tepp polyrade rude. Anenade bide i osål Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Dolig makrore hbt hypodat, exosk. ',
@@ -215,14 +227,20 @@ export const trainings: TrainingData[] = [
     ],
   },
   {
+    name: 'English, MD',
+    description:
+      'Inglês real do dia a dia médico americano, do básico ao avançado, com estudos de textos, flash cards, exercícios e 2 encontros ao vivo de conversação semanal. É a sua preparação perfeita para os estágios, pesquisa e residência médica nos EUA.',
+    descriptionEn:
+      'Real American medical everyday English, from basic to advanced, with text studies, flash cards, exercises and 2 live weekly conversation meetings. Its your perfect preparation for internships, research, and medical residency in the US.',
+    img: 'english-md',
+    aspectRatio: 2.1,
     coordName: 'Karin Maria, MD',
     coordDescription:
       'Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Tepp polyrade rude. Anenade bide i osål Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Tepp polyrade rude. Anenade bide i osål Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Dolig makrore hbt hypodat, exosk. ',
     coordDescriptionEn:
       'Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Tepp polyrade rude. Anenade bide i osål Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Tepp polyrade rude. Anenade bide i osål Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Dolig makrore hbt hypodat, exosk. ',
     coordImg: 'mariana-montebeller',
-    video: 'd1bd315b-b974-4034-8076-9ff2a0338429',
-
+    video: 'b473db26-9b3d-4afb-a8d3-617a893d0113',
     modules: [
       {
         title: 'Lorem ipsum dolor',
@@ -397,13 +415,20 @@ export const trainings: TrainingData[] = [
     ],
   },
   {
+    name: 'Você Médico nos EUA',
+    description:
+      'Mentoria personalizada e detalhada do inicio ao fim do seu processo de validação. O VMEUA ensina todo o processo, promove mesas redondas e meetings de networking, te posiciona nos estágios, cuida da sua aplicação para a residência e te treina para as entrevistas.',
+    descriptionEn:
+      'Personalized and detailed mentoring from beginning to end of your validation process. VMEUA teaches the entire process, promotes round tables and networking meetings, positions you in internships, takes care of your residency application and trains you for interviews.',
+    img: 'voce-medico-nos-eua',
+    aspectRatio: 1,
     coordName: 'Breno Andrade, MD',
     coordDescription:
       'Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Tepp polyrade rude. Anenade bide i osål Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Tepp polyrade rude. Anenade bide i osål Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Dolig makrore hbt hypodat, exosk. ',
     coordDescriptionEn:
       'Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Tepp polyrade rude. Anenade bide i osål Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Tepp polyrade rude. Anenade bide i osål Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Dolig makrore hbt hypodat, exosk. ',
     coordImg: 'mariana-montebeller',
-    video: 'b473db26-9b3d-4afb-a8d3-617a893d0113',
+    video: 'd1bd315b-b974-4034-8076-9ff2a0338429',
     modules: [
       {
         title: 'Lorem ipsum dolor',
@@ -562,6 +587,13 @@ export const trainings: TrainingData[] = [
     ],
   },
   {
+    name: 'RD Clerkship and Observership Program',
+    description:
+      'a RD med busca as oportunidades de estágios nos EUA de acordo com o seu perfil, cuida da sua documentação de aplicação e escreve os modelos de email para você enviar aos departamentos.',
+    descriptionEn:
+      'RD med searches for internship opportunities in the USA according to your profile, takes care of your application documentation and writes email templates for you to send to departments.',
+    img: 'rd-clerkship-and-observership-program',
+    aspectRatio: 1.49,
     coordName: 'RD Clerkship and Observership Program',
     coordDescription:
       'Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Tepp polyrade rude. Anenade bide i osål Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Tepp polyrade rude. Anenade bide i osål Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Dolig makrore hbt hypodat, exosk. ',
@@ -747,8 +779,14 @@ export const trainings: TrainingData[] = [
       },
     ],
   },
-
   {
+    name: 'RD Research Fellow Program',
+    description:
+      'Procuramos oportunidades remuneradas ou não de pesquisa nos EUA. Em geral são programas de 1 ano e você não precisa ter o diploma validado. Uma oportunidade de fortalecer muito a sua aplicação para especialidades competitivas ou especialidades menos concorridas',
+    descriptionEn:
+      'We seek paid and unpaid research opportunities in the US. In general, they are 1-year programs and you do not need to have your diploma validated. An opportunity to greatly strengthen your application for competitive or less competitive specialties',
+    img: 'rd-research-fellow-program',
+    aspectRatio: 1.26,
     coordName: 'RD Research Fellow Program',
     coordDescription:
       'Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Tepp polyrade rude. Anenade bide i osål Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Tepp polyrade rude. Anenade bide i osål Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Dolig makrore hbt hypodat, exosk. ',
@@ -934,9 +972,15 @@ export const trainings: TrainingData[] = [
       },
     ],
   },
-
   {
-    coordName: 'time do match',
+    name: 'Time do Match',
+    description:
+      'Nós cuidamos de tudo multiplicar as suas chances e evitar erros no momento crucial da aplicação. O time do match conta com mentores que são Diretores de Programa de residência nos EUA, Diretores de internato (clerkship) nos EUA e muito mais.',
+    descriptionEn:
+      'We take care of everything to multiply your chances and avoid mistakes at the crucial moment of the application. The match team features mentors who are US Residency Program Directors, US Clerkship Directors and more.',
+    img: 'time-do-match',
+    aspectRatio: 2.08,
+    coordName: 'Time do Match',
     coordDescription:
       'Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Tepp polyrade rude. Anenade bide i osål Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Tepp polyrade rude. Anenade bide i osål Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Dolig makrore hbt hypodat, exosk. ',
     coordDescriptionEn:
