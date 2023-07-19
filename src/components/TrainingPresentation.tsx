@@ -29,10 +29,13 @@ export default function Training(props: { id: number }) {
             </h3>
           </div>
         </div>
-        <CTA className="hidden lg:block">Quero uma aula grátis</CTA>
+        <CTA class="hidden lg:block">
+          <span class="pt-BR">Quero uma aula grátis</span>
+          <span class="en">I want a free class</span>
+        </CTA>
       </div>
       <TrainingVideo id={trainings[props.id].video} />
-      <CTA className="mx-auto mt-14 block lg:hidden">
+      <CTA class="mx-auto mt-14 block lg:hidden">
         <span class="pt-BR">Quero uma aula grátis</span>
         <span class="en">I want a free class</span>
       </CTA>
