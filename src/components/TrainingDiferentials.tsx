@@ -7,7 +7,7 @@ import { trainings } from 'data/training';
 export default function TrainingDifferentials(props: { id: number }) {
   return (
     <div class="container my-12 sm:my-[72px]">
-      <h3 class="inline font-title text-[30px] font-semibold uppercase leading-tight tracking-[2.55px]">
+      <h3 class="inline font-title text-xl font-semibold uppercase leading-tight tracking-[2.55px] md:text-[30px]">
         <span class="pt-BR">Diferenciais do</span>
         <span class="en">Differentials of</span>{' '}
         {carouselTrainingsItems[props.id].title}

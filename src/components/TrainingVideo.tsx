@@ -31,8 +31,9 @@ export default function TrainingVideo(props: {
               height="40"
               viewBox="0 0 88 88"
               fill="none"
+              class="fill-white"
             >
-              <g filter="url(#filter0_b_508_42075)">
+              <g>
                 <path
                   d="M61.875 41.6944C63.7083 42.7191 63.7083 45.2809 61.875 46.3056L37.125 60.1393C35.2917 61.1641 33 59.8832 33 57.8337L33 30.1663C33 28.1168 35.2917 26.8359 37.125 27.8607L61.875 41.6944Z"
                   fill="white"
