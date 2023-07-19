@@ -147,11 +147,18 @@ export default function Trainings() {
         </div>
       </div>
       <img
-        class="absolute left-0 top-0 z-[1]"
-        src="/images/trainings-draw-line-1.png"
+        class="absolute left-0 top-0 z-[1] hidden md:block"
+        src="/images/training-draw-line-1.png"
         alt="padrão de linhas de fundo"
         width={398}
         height={436}
+      />
+      <img
+        class="absolute right-0 top-40 z-[1] hidden md:block"
+        src="/images/training-draw-line-2.png"
+        alt="padrão de linhas de fundo"
+        width={238}
+        height={319}
       />
     </section>
   );

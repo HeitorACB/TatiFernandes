@@ -13,7 +13,7 @@ export default function TrainingDifferentials(props: { id: number }) {
       <div class="flex flex-wrap gap-x-12 gap-y-16">
         {trainings[props.id].differentials.map(
           ({ icon, title, titleEn, description, descriptionEn }) => (
-            <div class="flex w-[268px] flex-col gap-y-4">
+            <div class="gap-y- z-[2] flex w-[268px] flex-col">
               <CardIcon type={icon} />
               <h5 class="text-[#FF3158]">
                 <span class="pt-BR">{title}</span>

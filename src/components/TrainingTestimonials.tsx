@@ -20,7 +20,7 @@ export default function TrainingTestimonials(props: { id: number }) {
     <div class="relative">
       <div
         id="carousel-testimonials"
-        class="container relative mt-[72px] flex overflow-hidden rounded-3xl bg-[#12193E] p-7 px-0"
+        class="container relative z-[2] mt-[72px] flex overflow-hidden rounded-3xl bg-[#12193E] p-7 px-0"
       >
         {trainings[props.id].testimonials.map(
           ({ name, img, description, descriptionEn }) => (
@@ -42,7 +42,7 @@ export default function TrainingTestimonials(props: { id: number }) {
           ),
         )}
       </div>
-      <div class="absolute bottom-10 left-1/2 flex -translate-x-1/2 gap-x-8">
+      <div class="absolute bottom-10 left-1/2 z-[2] flex -translate-x-1/2 gap-x-8">
         {carouselTestimonialsButtons.map(({ label, icon }, index) => (
           <button
             id={`carousel-testimonials-button-${index}`}
@@ -66,6 +66,13 @@ export default function TrainingTestimonials(props: { id: number }) {
           </button>
         ))}
       </div>
+      <img
+        class="absolute -top-1/2 right-0 z-[1] hidden xl:block"
+        src="/images/training-draw-line-4.png"
+        alt="padrão de linhas de fundo"
+        width={445}
+        height={500}
+      />
     </div>
   );
 }
