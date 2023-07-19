@@ -221,7 +221,7 @@ export const trainings: TrainingData[] = [
       'Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Tepp polyrade rude. Anenade bide i osål Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Tepp polyrade rude. Anenade bide i osål Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Dolig makrore hbt hypodat, exosk. ',
     coordDescriptionEn:
       'Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Tepp polyrade rude. Anenade bide i osål Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Tepp polyrade rude. Anenade bide i osål Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Dolig makrore hbt hypodat, exosk. ',
-    coordImg: '',
+    coordImg: 'mariana-montebeller',
     video: '47935e3b-265f-4f95-8bb4-b06ca1f57dcd',
 
     modules: [
@@ -332,7 +332,7 @@ export const trainings: TrainingData[] = [
     ],
     testimonials: [
       {
-        img: '',
+        img: 'nayani-teixeira',
         name: 'Nayani Teixeira de Oliveira Maciel',
         description:
           'O grupo Rd step 1 tem sido fundamental no meu processo para validação de diploma nos EUA, eles são extremamente competentes e são muito comprometidos com nossa aprendizagem,além de tudo são acessíveis, neste pouco tempo que estou com eles já sou muito grata por todo conhecimento compartilhado',
@@ -340,7 +340,7 @@ export const trainings: TrainingData[] = [
           'The Rd step 1 group has been fundamental in my process for validating a diploma in the USA, they are extremely competent and are very committed to our learning, in addition to everything they are accessible, in the short time that I have been with them I am already very grateful for all the knowledge shared',
       },
       {
-        img: '',
+        img: 'matheus-souza',
         name: 'Matheus Souza',
         description:
           'Estou no último ano da faculdade de medicina e faço parte do Rd step 1 e da mentoria você médico nos EUA. Estou extremamente satisfeito de fazer parte do curso. O cronograma de estudo me dá um caminho todos os dias na hora de estudar, algo que antes era muito difícil de se organizar sozinho pela quantidade de conteúdo necessária para a prova. As aulas são muito didáticas, rápidas, com destaque para os pontos mais importantes, que aparecem mais nas provas! Além disso, os encontros ao vivo para revisão são essenciais para manter o foco e dar uma renovada no incentivo de continuar estudando. A equipe toda esta de parabéns, são profissionais excepcionais e atenciosos! Se não fosse o Rd step 1, com certeza estaria muito mais longe de alcançar meu objetivo!',
@@ -348,7 +348,7 @@ export const trainings: TrainingData[] = [
           "I'm in the last year of medical school and I'm part of the Rd step 1 and mentoring you doctor in the USA. I am extremely pleased to be part of the course. The study schedule gives me a path every day when it comes to studying, something that was previously very difficult to organize on my own due to the amount of content needed for the test. Classes are very didactic, fast, highlighting the most important points, which appear more in the tests! In addition, live review meetings are essential to maintain focus and renew the incentive to continue studying. The whole team is to be congratulated, they are exceptional and attentive professionals! If it weren't for Rd step 1, I would definitely be much further away from reaching my goal!",
       },
       {
-        img: '',
+        img: 'juliana-secomandi',
         name: 'Juliana Secomandi Machado',
         description:
           'O RD Step1 é sensacional, super organizado e com professores excepcionais! Já havia começado a estudar sozinha e parado algumas vezes e nunca estive tão empolgada e confiante como estou agora. Não tenho dúvidas que foi um dos melhores  investimentos da minha vida. Tenho muito orgulho de fazer parte da primeira turma desse curso incrível!',
@@ -356,7 +356,7 @@ export const trainings: TrainingData[] = [
           "RD Step1 is sensational, super organized and with exceptional teachers! I had already started studying on my own and stopped a few times and I was never as excited and confident as I am now. I have no doubt that it was one of the best investments of my life. I'm very proud to be part of the first class of this amazing course!",
       },
       {
-        img: '',
+        img: 'julia-reis',
         name: 'Júlia B. Q. dos Reis',
         description:
           'Com certeza o melhor investimento que eu poderia ter feito! Os professores dão tudo de si, e é notável a paixão o engajamento e cada um com a qualidade das aulas!Além disso, a equipe está sempre atenta e procurando inovar, oferecendo cada vez mais! Já me sinto vencedora!! Rumo ao match com o RD step 1!!!',
@@ -364,7 +364,7 @@ export const trainings: TrainingData[] = [
           'Definitely the best investment I could have made! The teachers give their all, and the passion, engagement and each one with the quality of the classes is remarkable! In addition, the team is always attentive and looking to innovate, offering more and more! I already feel like a winner!! Towards the match with RD step 1!!!',
       },
       {
-        img: '',
+        img: 'carlos-macedo',
         name: 'Carlos Eduardo de Macedo Marins',
         description:
           'Meu nome é Carlos Macedo, sou old graduate, já com esposa, filha, subespecialista, tinha o desejo de ir pros EUA, mas achava o processo difícil, longo e a medida que o tempo passava até inalcançável… Até que há uns meses decidimos entrar nesse projeto, inicialmente no VMEUA e curso de inglês médico… E desde Fevereiro no RD Step1, que eu considero uma revolução no modo como encarar o processo de validação, desde a forma de estudar, aulas super completas, professores extremamente didáticos e a turma que, literalmente, se apoia! Recomendo de olhos fechados!',
@@ -372,7 +372,7 @@ export const trainings: TrainingData[] = [
           'My name is Carlos Macedo, I am an old graduate, already with a wife, daughter, subspecialist, I wanted to go to the USA, but I found the process difficult, long and as time went by, even unattainable… Until a few months ago we decided to enter in this project, initially at VMEUA and the medical English course… And since February at RD Step1, which I consider a revolution in the way we face the validation process, from the way of studying, super complete classes, extremely didactic teachers and the class that literally leans on! I recommend with eyes closed!',
       },
       {
-        img: '',
+        img: 'daniella-cabral',
         name: 'Daniella Cabral de Freitas',
         description:
           '“pós mais de 20 anos de formada já havia desistido de revalidar o meu diploma, pois já haviam me desestimulado ao máximo. Despretensiosamente agendei um Meet com o Rafael Duarte, que de uma maneira ímpar me explicou sobre todo o processo e de que maneira iria me auxiliar em tudo! Conversa que literalmente mudou a minha vida! Estudando e me preparando para as provas! Sim, é possível.',
@@ -380,7 +380,7 @@ export const trainings: TrainingData[] = [
           '“After more than 20 years of graduation, I had already given up trying to revalidate my diploma, as they had already discouraged me to the maximum extent. I unpretentiously scheduled a Meet with Rafael Duarte, who in a unique way explained to me about the whole process and how he would help me with everything! Conversation that literally changed my life! Studying and preparing for exams! Yes, it is possible.',
       },
       {
-        img: '',
+        img: 'josiane-pereira',
         name: 'Josiane Pereira',
         description:
           'Quando eu mesma me questiono porque estou nesse caminho e isso já aconteceu,me lembro que tomei uma decisão porque sentia que profissionalmente eu queria mais, eu precisava de um outro foco profissional,e quando o sonho é grande é bom se aliar aqueles que te ajudarão a moldar o teu sucesso,eis que aqui estou unida com a família RD,nessa família todos se ajudam a manter o foco e o caminho certo ao tão desejado PASS.',
@@ -388,7 +388,7 @@ export const trainings: TrainingData[] = [
           "When I ask myself why I'm on this path and it's already happened, I remember that I made a decision because I felt that professionally I wanted more, I needed another professional focus, and when the dream is big it's good to ally yourself with those who will help you shaping your success, behold, here I am united with the RD family, in this family everyone helps each other to keep the focus and the right path to the much desired PASS.",
       },
       {
-        img: '',
+        img: 'bruno-sena',
         name: 'Bruno Sena Simões',
         description:
           'Os cursos são incríveis e com pessoas mais incríveis ainda! Estou atualmente no VMEUA e no English MD, com planos de entrar logo logo no RD Step 1! Meu único arrependimento é não ter conhecido esses cursos antes!',
@@ -403,7 +403,7 @@ export const trainings: TrainingData[] = [
       'Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Tepp polyrade rude. Anenade bide i osål Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Tepp polyrade rude. Anenade bide i osål Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Dolig makrore hbt hypodat, exosk. ',
     coordDescriptionEn:
       'Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Tepp polyrade rude. Anenade bide i osål Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Tepp polyrade rude. Anenade bide i osål Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Dolig makrore hbt hypodat, exosk. ',
-    coordImg: '',
+    coordImg: 'mariana-montebeller',
     video: '47935e3b-265f-4f95-8bb4-b06ca1f57dcd',
 
     modules: [
@@ -498,7 +498,7 @@ export const trainings: TrainingData[] = [
     ],
     testimonials: [
       {
-        img: '',
+        img: 'nayani-teixeira',
         name: 'Nayani Teixeira de Oliveira Maciel',
         description:
           'O grupo Rd step 1 tem sido fundamental no meu processo para validação de diploma nos EUA, eles são extremamente competentes e são muito comprometidos com nossa aprendizagem,além de tudo são acessíveis, neste pouco tempo que estou com eles já sou muito grata por todo conhecimento compartilhado',
@@ -506,7 +506,7 @@ export const trainings: TrainingData[] = [
           'The Rd step 1 group has been fundamental in my process for validating a diploma in the USA, they are extremely competent and are very committed to our learning, in addition to everything they are accessible, in the short time that I have been with them I am already very grateful for all the knowledge shared',
       },
       {
-        img: '',
+        img: 'matheus-souza',
         name: 'Matheus Souza',
         description:
           'Estou no último ano da faculdade de medicina e faço parte do Rd step 1 e da mentoria você médico nos EUA. Estou extremamente satisfeito de fazer parte do curso. O cronograma de estudo me dá um caminho todos os dias na hora de estudar, algo que antes era muito difícil de se organizar sozinho pela quantidade de conteúdo necessária para a prova. As aulas são muito didáticas, rápidas, com destaque para os pontos mais importantes, que aparecem mais nas provas! Além disso, os encontros ao vivo para revisão são essenciais para manter o foco e dar uma renovada no incentivo de continuar estudando. A equipe toda esta de parabéns, são profissionais excepcionais e atenciosos! Se não fosse o Rd step 1, com certeza estaria muito mais longe de alcançar meu objetivo!',
@@ -514,7 +514,7 @@ export const trainings: TrainingData[] = [
           "I'm in the last year of medical school and I'm part of the Rd step 1 and mentoring you doctor in the USA. I am extremely pleased to be part of the course. The study schedule gives me a path every day when it comes to studying, something that was previously very difficult to organize on my own due to the amount of content needed for the test. Classes are very didactic, fast, highlighting the most important points, which appear more in the tests! In addition, live review meetings are essential to maintain focus and renew the incentive to continue studying. The whole team is to be congratulated, they are exceptional and attentive professionals! If it weren't for Rd step 1, I would definitely be much further away from reaching my goal!",
       },
       {
-        img: '',
+        img: 'juliana-secomandi',
         name: 'Juliana Secomandi Machado',
         description:
           'O RD Step1 é sensacional, super organizado e com professores excepcionais! Já havia começado a estudar sozinha e parado algumas vezes e nunca estive tão empolgada e confiante como estou agora. Não tenho dúvidas que foi um dos melhores  investimentos da minha vida. Tenho muito orgulho de fazer parte da primeira turma desse curso incrível!',
@@ -522,7 +522,7 @@ export const trainings: TrainingData[] = [
           "RD Step1 is sensational, super organized and with exceptional teachers! I had already started studying on my own and stopped a few times and I was never as excited and confident as I am now. I have no doubt that it was one of the best investments of my life. I'm very proud to be part of the first class of this amazing course!",
       },
       {
-        img: '',
+        img: 'julia-reis',
         name: 'Júlia B. Q. dos Reis',
         description:
           'Com certeza o melhor investimento que eu poderia ter feito! Os professores dão tudo de si, e é notável a paixão o engajamento e cada um com a qualidade das aulas!Além disso, a equipe está sempre atenta e procurando inovar, oferecendo cada vez mais! Já me sinto vencedora!! Rumo ao match com o RD step 1!!!',
@@ -530,7 +530,7 @@ export const trainings: TrainingData[] = [
           'Definitely the best investment I could have made! The teachers give their all, and the passion, engagement and each one with the quality of the classes is remarkable! In addition, the team is always attentive and looking to innovate, offering more and more! I already feel like a winner!! Towards the match with RD step 1!!!',
       },
       {
-        img: '',
+        img: 'carlos-macedo',
         name: 'Carlos Eduardo de Macedo Marins',
         description:
           'Meu nome é Carlos Macedo, sou old graduate, já com esposa, filha, subespecialista, tinha o desejo de ir pros EUA, mas achava o processo difícil, longo e a medida que o tempo passava até inalcançável… Até que há uns meses decidimos entrar nesse projeto, inicialmente no VMEUA e curso de inglês médico… E desde Fevereiro no RD Step1, que eu considero uma revolução no modo como encarar o processo de validação, desde a forma de estudar, aulas super completas, professores extremamente didáticos e a turma que, literalmente, se apoia! Recomendo de olhos fechados!',
@@ -538,7 +538,7 @@ export const trainings: TrainingData[] = [
           'My name is Carlos Macedo, I am an old graduate, already with a wife, daughter, subspecialist, I wanted to go to the USA, but I found the process difficult, long and as time went by, even unattainable… Until a few months ago we decided to enter in this project, initially at VMEUA and the medical English course… And since February at RD Step1, which I consider a revolution in the way we face the validation process, from the way of studying, super complete classes, extremely didactic teachers and the class that literally leans on! I recommend with eyes closed!',
       },
       {
-        img: '',
+        img: 'daniella-cabral',
         name: 'Daniella Cabral de Freitas',
         description:
           '“pós mais de 20 anos de formada já havia desistido de revalidar o meu diploma, pois já haviam me desestimulado ao máximo. Despretensiosamente agendei um Meet com o Rafael Duarte, que de uma maneira ímpar me explicou sobre todo o processo e de que maneira iria me auxiliar em tudo! Conversa que literalmente mudou a minha vida! Estudando e me preparando para as provas! Sim, é possível.',
@@ -546,7 +546,7 @@ export const trainings: TrainingData[] = [
           '“After more than 20 years of graduation, I had already given up trying to revalidate my diploma, as they had already discouraged me to the maximum extent. I unpretentiously scheduled a Meet with Rafael Duarte, who in a unique way explained to me about the whole process and how he would help me with everything! Conversation that literally changed my life! Studying and preparing for exams! Yes, it is possible.',
       },
       {
-        img: '',
+        img: 'josiane-pereira',
         name: 'Josiane Pereira',
         description:
           'Quando eu mesma me questiono porque estou nesse caminho e isso já aconteceu,me lembro que tomei uma decisão porque sentia que profissionalmente eu queria mais, eu precisava de um outro foco profissional,e quando o sonho é grande é bom se aliar aqueles que te ajudarão a moldar o teu sucesso,eis que aqui estou unida com a família RD,nessa família todos se ajudam a manter o foco e o caminho certo ao tão desejado PASS.',
@@ -554,7 +554,7 @@ export const trainings: TrainingData[] = [
           "When I ask myself why I'm on this path and it's already happened, I remember that I made a decision because I felt that professionally I wanted more, I needed another professional focus, and when the dream is big it's good to ally yourself with those who will help you shaping your success, behold, here I am united with the RD family, in this family everyone helps each other to keep the focus and the right path to the much desired PASS.",
       },
       {
-        img: '',
+        img: 'bruno-sena',
         name: 'Bruno Sena Simões',
         description:
           'Os cursos são incríveis e com pessoas mais incríveis ainda! Estou atualmente no VMEUA e no English MD, com planos de entrar logo logo no RD Step 1! Meu único arrependimento é não ter conhecido esses cursos antes!',
@@ -684,7 +684,7 @@ export const trainings: TrainingData[] = [
     ],
     testimonials: [
       {
-        img: '',
+        img: 'nayani-teixeira',
         name: 'Nayani Teixeira de Oliveira Maciel',
         description:
           'O grupo Rd step 1 tem sido fundamental no meu processo para validação de diploma nos EUA, eles são extremamente competentes e são muito comprometidos com nossa aprendizagem,além de tudo são acessíveis, neste pouco tempo que estou com eles já sou muito grata por todo conhecimento compartilhado',
@@ -692,7 +692,7 @@ export const trainings: TrainingData[] = [
           'The Rd step 1 group has been fundamental in my process for validating a diploma in the USA, they are extremely competent and are very committed to our learning, in addition to everything they are accessible, in the short time that I have been with them I am already very grateful for all the knowledge shared',
       },
       {
-        img: '',
+        img: 'matheus-souza',
         name: 'Matheus Souza',
         description:
           'Estou no último ano da faculdade de medicina e faço parte do Rd step 1 e da mentoria você médico nos EUA. Estou extremamente satisfeito de fazer parte do curso. O cronograma de estudo me dá um caminho todos os dias na hora de estudar, algo que antes era muito difícil de se organizar sozinho pela quantidade de conteúdo necessária para a prova. As aulas são muito didáticas, rápidas, com destaque para os pontos mais importantes, que aparecem mais nas provas! Além disso, os encontros ao vivo para revisão são essenciais para manter o foco e dar uma renovada no incentivo de continuar estudando. A equipe toda esta de parabéns, são profissionais excepcionais e atenciosos! Se não fosse o Rd step 1, com certeza estaria muito mais longe de alcançar meu objetivo!',
@@ -700,7 +700,7 @@ export const trainings: TrainingData[] = [
           "I'm in the last year of medical school and I'm part of the Rd step 1 and mentoring you doctor in the USA. I am extremely pleased to be part of the course. The study schedule gives me a path every day when it comes to studying, something that was previously very difficult to organize on my own due to the amount of content needed for the test. Classes are very didactic, fast, highlighting the most important points, which appear more in the tests! In addition, live review meetings are essential to maintain focus and renew the incentive to continue studying. The whole team is to be congratulated, they are exceptional and attentive professionals! If it weren't for Rd step 1, I would definitely be much further away from reaching my goal!",
       },
       {
-        img: '',
+        img: 'juliana-secomandi',
         name: 'Juliana Secomandi Machado',
         description:
           'O RD Step1 é sensacional, super organizado e com professores excepcionais! Já havia começado a estudar sozinha e parado algumas vezes e nunca estive tão empolgada e confiante como estou agora. Não tenho dúvidas que foi um dos melhores  investimentos da minha vida. Tenho muito orgulho de fazer parte da primeira turma desse curso incrível!',
@@ -708,7 +708,7 @@ export const trainings: TrainingData[] = [
           "RD Step1 is sensational, super organized and with exceptional teachers! I had already started studying on my own and stopped a few times and I was never as excited and confident as I am now. I have no doubt that it was one of the best investments of my life. I'm very proud to be part of the first class of this amazing course!",
       },
       {
-        img: '',
+        img: 'julia-reis',
         name: 'Júlia B. Q. dos Reis',
         description:
           'Com certeza o melhor investimento que eu poderia ter feito! Os professores dão tudo de si, e é notável a paixão o engajamento e cada um com a qualidade das aulas!Além disso, a equipe está sempre atenta e procurando inovar, oferecendo cada vez mais! Já me sinto vencedora!! Rumo ao match com o RD step 1!!!',
@@ -716,7 +716,7 @@ export const trainings: TrainingData[] = [
           'Definitely the best investment I could have made! The teachers give their all, and the passion, engagement and each one with the quality of the classes is remarkable! In addition, the team is always attentive and looking to innovate, offering more and more! I already feel like a winner!! Towards the match with RD step 1!!!',
       },
       {
-        img: '',
+        img: 'carlos-macedo',
         name: 'Carlos Eduardo de Macedo Marins',
         description:
           'Meu nome é Carlos Macedo, sou old graduate, já com esposa, filha, subespecialista, tinha o desejo de ir pros EUA, mas achava o processo difícil, longo e a medida que o tempo passava até inalcançável… Até que há uns meses decidimos entrar nesse projeto, inicialmente no VMEUA e curso de inglês médico… E desde Fevereiro no RD Step1, que eu considero uma revolução no modo como encarar o processo de validação, desde a forma de estudar, aulas super completas, professores extremamente didáticos e a turma que, literalmente, se apoia! Recomendo de olhos fechados!',
@@ -724,7 +724,7 @@ export const trainings: TrainingData[] = [
           'My name is Carlos Macedo, I am an old graduate, already with a wife, daughter, subspecialist, I wanted to go to the USA, but I found the process difficult, long and as time went by, even unattainable… Until a few months ago we decided to enter in this project, initially at VMEUA and the medical English course… And since February at RD Step1, which I consider a revolution in the way we face the validation process, from the way of studying, super complete classes, extremely didactic teachers and the class that literally leans on! I recommend with eyes closed!',
       },
       {
-        img: '',
+        img: 'daniella-cabral',
         name: 'Daniella Cabral de Freitas',
         description:
           '“pós mais de 20 anos de formada já havia desistido de revalidar o meu diploma, pois já haviam me desestimulado ao máximo. Despretensiosamente agendei um Meet com o Rafael Duarte, que de uma maneira ímpar me explicou sobre todo o processo e de que maneira iria me auxiliar em tudo! Conversa que literalmente mudou a minha vida! Estudando e me preparando para as provas! Sim, é possível.',
@@ -732,7 +732,7 @@ export const trainings: TrainingData[] = [
           '“After more than 20 years of graduation, I had already given up trying to revalidate my diploma, as they had already discouraged me to the maximum extent. I unpretentiously scheduled a Meet with Rafael Duarte, who in a unique way explained to me about the whole process and how he would help me with everything! Conversation that literally changed my life! Studying and preparing for exams! Yes, it is possible.',
       },
       {
-        img: '',
+        img: 'josiane-pereira',
         name: 'Josiane Pereira',
         description:
           'Quando eu mesma me questiono porque estou nesse caminho e isso já aconteceu,me lembro que tomei uma decisão porque sentia que profissionalmente eu queria mais, eu precisava de um outro foco profissional,e quando o sonho é grande é bom se aliar aqueles que te ajudarão a moldar o teu sucesso,eis que aqui estou unida com a família RD,nessa família todos se ajudam a manter o foco e o caminho certo ao tão desejado PASS.',
@@ -740,7 +740,7 @@ export const trainings: TrainingData[] = [
           "When I ask myself why I'm on this path and it's already happened, I remember that I made a decision because I felt that professionally I wanted more, I needed another professional focus, and when the dream is big it's good to ally yourself with those who will help you shaping your success, behold, here I am united with the RD family, in this family everyone helps each other to keep the focus and the right path to the much desired PASS.",
       },
       {
-        img: '',
+        img: 'bruno-sena',
         name: 'Bruno Sena Simões',
         description:
           'Os cursos são incríveis e com pessoas mais incríveis ainda! Estou atualmente no VMEUA e no English MD, com planos de entrar logo logo no RD Step 1! Meu único arrependimento é não ter conhecido esses cursos antes!',
@@ -871,7 +871,7 @@ export const trainings: TrainingData[] = [
     ],
     testimonials: [
       {
-        img: '',
+        img: 'nayani-teixeira',
         name: 'Nayani Teixeira de Oliveira Maciel',
         description:
           'O grupo Rd step 1 tem sido fundamental no meu processo para validação de diploma nos EUA, eles são extremamente competentes e são muito comprometidos com nossa aprendizagem,além de tudo são acessíveis, neste pouco tempo que estou com eles já sou muito grata por todo conhecimento compartilhado',
@@ -879,7 +879,7 @@ export const trainings: TrainingData[] = [
           'The Rd step 1 group has been fundamental in my process for validating a diploma in the USA, they are extremely competent and are very committed to our learning, in addition to everything they are accessible, in the short time that I have been with them I am already very grateful for all the knowledge shared',
       },
       {
-        img: '',
+        img: 'matheus-souza',
         name: 'Matheus Souza',
         description:
           'Estou no último ano da faculdade de medicina e faço parte do Rd step 1 e da mentoria você médico nos EUA. Estou extremamente satisfeito de fazer parte do curso. O cronograma de estudo me dá um caminho todos os dias na hora de estudar, algo que antes era muito difícil de se organizar sozinho pela quantidade de conteúdo necessária para a prova. As aulas são muito didáticas, rápidas, com destaque para os pontos mais importantes, que aparecem mais nas provas! Além disso, os encontros ao vivo para revisão são essenciais para manter o foco e dar uma renovada no incentivo de continuar estudando. A equipe toda esta de parabéns, são profissionais excepcionais e atenciosos! Se não fosse o Rd step 1, com certeza estaria muito mais longe de alcançar meu objetivo!',
@@ -887,7 +887,7 @@ export const trainings: TrainingData[] = [
           "I'm in the last year of medical school and I'm part of the Rd step 1 and mentoring you doctor in the USA. I am extremely pleased to be part of the course. The study schedule gives me a path every day when it comes to studying, something that was previously very difficult to organize on my own due to the amount of content needed for the test. Classes are very didactic, fast, highlighting the most important points, which appear more in the tests! In addition, live review meetings are essential to maintain focus and renew the incentive to continue studying. The whole team is to be congratulated, they are exceptional and attentive professionals! If it weren't for Rd step 1, I would definitely be much further away from reaching my goal!",
       },
       {
-        img: '',
+        img: 'juliana-secomandi',
         name: 'Juliana Secomandi Machado',
         description:
           'O RD Step1 é sensacional, super organizado e com professores excepcionais! Já havia começado a estudar sozinha e parado algumas vezes e nunca estive tão empolgada e confiante como estou agora. Não tenho dúvidas que foi um dos melhores  investimentos da minha vida. Tenho muito orgulho de fazer parte da primeira turma desse curso incrível!',
@@ -895,7 +895,7 @@ export const trainings: TrainingData[] = [
           "RD Step1 is sensational, super organized and with exceptional teachers! I had already started studying on my own and stopped a few times and I was never as excited and confident as I am now. I have no doubt that it was one of the best investments of my life. I'm very proud to be part of the first class of this amazing course!",
       },
       {
-        img: '',
+        img: 'julia-reis',
         name: 'Júlia B. Q. dos Reis',
         description:
           'Com certeza o melhor investimento que eu poderia ter feito! Os professores dão tudo de si, e é notável a paixão o engajamento e cada um com a qualidade das aulas!Além disso, a equipe está sempre atenta e procurando inovar, oferecendo cada vez mais! Já me sinto vencedora!! Rumo ao match com o RD step 1!!!',
@@ -903,7 +903,7 @@ export const trainings: TrainingData[] = [
           'Definitely the best investment I could have made! The teachers give their all, and the passion, engagement and each one with the quality of the classes is remarkable! In addition, the team is always attentive and looking to innovate, offering more and more! I already feel like a winner!! Towards the match with RD step 1!!!',
       },
       {
-        img: '',
+        img: 'carlos-macedo',
         name: 'Carlos Eduardo de Macedo Marins',
         description:
           'Meu nome é Carlos Macedo, sou old graduate, já com esposa, filha, subespecialista, tinha o desejo de ir pros EUA, mas achava o processo difícil, longo e a medida que o tempo passava até inalcançável… Até que há uns meses decidimos entrar nesse projeto, inicialmente no VMEUA e curso de inglês médico… E desde Fevereiro no RD Step1, que eu considero uma revolução no modo como encarar o processo de validação, desde a forma de estudar, aulas super completas, professores extremamente didáticos e a turma que, literalmente, se apoia! Recomendo de olhos fechados!',
@@ -911,7 +911,7 @@ export const trainings: TrainingData[] = [
           'My name is Carlos Macedo, I am an old graduate, already with a wife, daughter, subspecialist, I wanted to go to the USA, but I found the process difficult, long and as time went by, even unattainable… Until a few months ago we decided to enter in this project, initially at VMEUA and the medical English course… And since February at RD Step1, which I consider a revolution in the way we face the validation process, from the way of studying, super complete classes, extremely didactic teachers and the class that literally leans on! I recommend with eyes closed!',
       },
       {
-        img: '',
+        img: 'daniella-cabral',
         name: 'Daniella Cabral de Freitas',
         description:
           '“pós mais de 20 anos de formada já havia desistido de revalidar o meu diploma, pois já haviam me desestimulado ao máximo. Despretensiosamente agendei um Meet com o Rafael Duarte, que de uma maneira ímpar me explicou sobre todo o processo e de que maneira iria me auxiliar em tudo! Conversa que literalmente mudou a minha vida! Estudando e me preparando para as provas! Sim, é possível.',
@@ -919,7 +919,7 @@ export const trainings: TrainingData[] = [
           '“After more than 20 years of graduation, I had already given up trying to revalidate my diploma, as they had already discouraged me to the maximum extent. I unpretentiously scheduled a Meet with Rafael Duarte, who in a unique way explained to me about the whole process and how he would help me with everything! Conversation that literally changed my life! Studying and preparing for exams! Yes, it is possible.',
       },
       {
-        img: '',
+        img: 'josiane-pereira',
         name: 'Josiane Pereira',
         description:
           'Quando eu mesma me questiono porque estou nesse caminho e isso já aconteceu,me lembro que tomei uma decisão porque sentia que profissionalmente eu queria mais, eu precisava de um outro foco profissional,e quando o sonho é grande é bom se aliar aqueles que te ajudarão a moldar o teu sucesso,eis que aqui estou unida com a família RD,nessa família todos se ajudam a manter o foco e o caminho certo ao tão desejado PASS.',
@@ -927,7 +927,7 @@ export const trainings: TrainingData[] = [
           "When I ask myself why I'm on this path and it's already happened, I remember that I made a decision because I felt that professionally I wanted more, I needed another professional focus, and when the dream is big it's good to ally yourself with those who will help you shaping your success, behold, here I am united with the RD family, in this family everyone helps each other to keep the focus and the right path to the much desired PASS.",
       },
       {
-        img: '',
+        img: 'bruno-sena',
         name: 'Bruno Sena Simões',
         description:
           'Os cursos são incríveis e com pessoas mais incríveis ainda! Estou atualmente no VMEUA e no English MD, com planos de entrar logo logo no RD Step 1! Meu único arrependimento é não ter conhecido esses cursos antes!',
@@ -1058,7 +1058,7 @@ export const trainings: TrainingData[] = [
     ],
     testimonials: [
       {
-        img: '',
+        img: 'nayani-teixeira',
         name: 'Nayani Teixeira de Oliveira Maciel',
         description:
           'O grupo Rd step 1 tem sido fundamental no meu processo para validação de diploma nos EUA, eles são extremamente competentes e são muito comprometidos com nossa aprendizagem,além de tudo são acessíveis, neste pouco tempo que estou com eles já sou muito grata por todo conhecimento compartilhado',
@@ -1066,7 +1066,7 @@ export const trainings: TrainingData[] = [
           'The Rd step 1 group has been fundamental in my process for validating a diploma in the USA, they are extremely competent and are very committed to our learning, in addition to everything they are accessible, in the short time that I have been with them I am already very grateful for all the knowledge shared',
       },
       {
-        img: '',
+        img: 'matheus-souza',
         name: 'Matheus Souza',
         description:
           'Estou no último ano da faculdade de medicina e faço parte do Rd step 1 e da mentoria você médico nos EUA. Estou extremamente satisfeito de fazer parte do curso. O cronograma de estudo me dá um caminho todos os dias na hora de estudar, algo que antes era muito difícil de se organizar sozinho pela quantidade de conteúdo necessária para a prova. As aulas são muito didáticas, rápidas, com destaque para os pontos mais importantes, que aparecem mais nas provas! Além disso, os encontros ao vivo para revisão são essenciais para manter o foco e dar uma renovada no incentivo de continuar estudando. A equipe toda esta de parabéns, são profissionais excepcionais e atenciosos! Se não fosse o Rd step 1, com certeza estaria muito mais longe de alcançar meu objetivo!',
@@ -1074,7 +1074,7 @@ export const trainings: TrainingData[] = [
           "I'm in the last year of medical school and I'm part of the Rd step 1 and mentoring you doctor in the USA. I am extremely pleased to be part of the course. The study schedule gives me a path every day when it comes to studying, something that was previously very difficult to organize on my own due to the amount of content needed for the test. Classes are very didactic, fast, highlighting the most important points, which appear more in the tests! In addition, live review meetings are essential to maintain focus and renew the incentive to continue studying. The whole team is to be congratulated, they are exceptional and attentive professionals! If it weren't for Rd step 1, I would definitely be much further away from reaching my goal!",
       },
       {
-        img: '',
+        img: 'juliana-secomandi',
         name: 'Juliana Secomandi Machado',
         description:
           'O RD Step1 é sensacional, super organizado e com professores excepcionais! Já havia começado a estudar sozinha e parado algumas vezes e nunca estive tão empolgada e confiante como estou agora. Não tenho dúvidas que foi um dos melhores  investimentos da minha vida. Tenho muito orgulho de fazer parte da primeira turma desse curso incrível!',
@@ -1082,7 +1082,7 @@ export const trainings: TrainingData[] = [
           "RD Step1 is sensational, super organized and with exceptional teachers! I had already started studying on my own and stopped a few times and I was never as excited and confident as I am now. I have no doubt that it was one of the best investments of my life. I'm very proud to be part of the first class of this amazing course!",
       },
       {
-        img: '',
+        img: 'julia-reis',
         name: 'Júlia B. Q. dos Reis',
         description:
           'Com certeza o melhor investimento que eu poderia ter feito! Os professores dão tudo de si, e é notável a paixão o engajamento e cada um com a qualidade das aulas!Além disso, a equipe está sempre atenta e procurando inovar, oferecendo cada vez mais! Já me sinto vencedora!! Rumo ao match com o RD step 1!!!',
@@ -1090,7 +1090,7 @@ export const trainings: TrainingData[] = [
           'Definitely the best investment I could have made! The teachers give their all, and the passion, engagement and each one with the quality of the classes is remarkable! In addition, the team is always attentive and looking to innovate, offering more and more! I already feel like a winner!! Towards the match with RD step 1!!!',
       },
       {
-        img: '',
+        img: 'carlos-macedo',
         name: 'Carlos Eduardo de Macedo Marins',
         description:
           'Meu nome é Carlos Macedo, sou old graduate, já com esposa, filha, subespecialista, tinha o desejo de ir pros EUA, mas achava o processo difícil, longo e a medida que o tempo passava até inalcançável… Até que há uns meses decidimos entrar nesse projeto, inicialmente no VMEUA e curso de inglês médico… E desde Fevereiro no RD Step1, que eu considero uma revolução no modo como encarar o processo de validação, desde a forma de estudar, aulas super completas, professores extremamente didáticos e a turma que, literalmente, se apoia! Recomendo de olhos fechados!',
@@ -1098,7 +1098,7 @@ export const trainings: TrainingData[] = [
           'My name is Carlos Macedo, I am an old graduate, already with a wife, daughter, subspecialist, I wanted to go to the USA, but I found the process difficult, long and as time went by, even unattainable… Until a few months ago we decided to enter in this project, initially at VMEUA and the medical English course… And since February at RD Step1, which I consider a revolution in the way we face the validation process, from the way of studying, super complete classes, extremely didactic teachers and the class that literally leans on! I recommend with eyes closed!',
       },
       {
-        img: '',
+        img: 'daniella-cabral',
         name: 'Daniella Cabral de Freitas',
         description:
           '“pós mais de 20 anos de formada já havia desistido de revalidar o meu diploma, pois já haviam me desestimulado ao máximo. Despretensiosamente agendei um Meet com o Rafael Duarte, que de uma maneira ímpar me explicou sobre todo o processo e de que maneira iria me auxiliar em tudo! Conversa que literalmente mudou a minha vida! Estudando e me preparando para as provas! Sim, é possível.',
@@ -1106,7 +1106,7 @@ export const trainings: TrainingData[] = [
           '“After more than 20 years of graduation, I had already given up trying to revalidate my diploma, as they had already discouraged me to the maximum extent. I unpretentiously scheduled a Meet with Rafael Duarte, who in a unique way explained to me about the whole process and how he would help me with everything! Conversation that literally changed my life! Studying and preparing for exams! Yes, it is possible.',
       },
       {
-        img: '',
+        img: 'josiane-pereira',
         name: 'Josiane Pereira',
         description:
           'Quando eu mesma me questiono porque estou nesse caminho e isso já aconteceu,me lembro que tomei uma decisão porque sentia que profissionalmente eu queria mais, eu precisava de um outro foco profissional,e quando o sonho é grande é bom se aliar aqueles que te ajudarão a moldar o teu sucesso,eis que aqui estou unida com a família RD,nessa família todos se ajudam a manter o foco e o caminho certo ao tão desejado PASS.',
@@ -1114,7 +1114,7 @@ export const trainings: TrainingData[] = [
           "When I ask myself why I'm on this path and it's already happened, I remember that I made a decision because I felt that professionally I wanted more, I needed another professional focus, and when the dream is big it's good to ally yourself with those who will help you shaping your success, behold, here I am united with the RD family, in this family everyone helps each other to keep the focus and the right path to the much desired PASS.",
       },
       {
-        img: '',
+        img: 'bruno-sena',
         name: 'Bruno Sena Simões',
         description:
           'Os cursos são incríveis e com pessoas mais incríveis ainda! Estou atualmente no VMEUA e no English MD, com planos de entrar logo logo no RD Step 1! Meu único arrependimento é não ter conhecido esses cursos antes!',
