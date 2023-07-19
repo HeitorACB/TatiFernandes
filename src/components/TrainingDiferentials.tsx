@@ -6,14 +6,16 @@ import { trainings } from 'data/training';
 
 export default function TrainingDifferentials(props: { id: number }) {
   return (
-    <div class="container mt-[72px]">
-      <h3 class="mb-8 font-title text-[30px] font-semibold uppercase leading-tight tracking-[2.55px]">
-        Diferenciais do {carouselTrainingsItems[props.id].title}
+    <div class="container my-12 sm:my-[72px]">
+      <h3 class="inline font-title text-[30px] font-semibold uppercase leading-tight tracking-[2.55px]">
+        <span class="pt-BR">Diferenciais do</span>
+        <span class="en">Differentials of</span>{' '}
+        {carouselTrainingsItems[props.id].title}
       </h3>
-      <div class="flex flex-wrap gap-x-12 gap-y-16">
+      <div class="mt-8 flex flex-wrap gap-x-12 gap-y-16">
         {trainings[props.id].differentials.map(
           ({ icon, title, titleEn, description, descriptionEn }) => (
-            <div class="gap-y- z-[2] flex w-[268px] flex-col">
+            <div class="z-[2] flex w-full flex-col gap-y-4 md:w-[268px]">
               <CardIcon type={icon} />
               <p class="text-[#FF3158]">
                 <span class="pt-BR">{title}</span>

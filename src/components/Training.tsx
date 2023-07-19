@@ -90,17 +90,17 @@ export default function Trainings() {
     <section class="relative z-[1] w-full bg-[#000830] py-24" id="training">
       <div class="relative z-[2]">
         <div class="container mb-16">
-          <div class="mx-auto max-w-[930px] md:text-center">
+          <div class="mx-auto md:max-w-[600px] md:text-center lg:max-w-[930px]">
             <h2 class="mb-5 font-title text-3xl font-bold uppercase leading-[44px] md:text-4xl">
               <span class="pt-BR">
                 Nossos{' '}
                 <span class="text-[#FF3158] underline">treinamentos</span>
               </span>
               <span class="en">
-                our <span class="text-[#FF3158] underline">trainings</span>
+                Our <span class="text-[#FF3158] underline">trainings</span>
               </span>
             </h2>
-            <h3 class="hidden text-gray-300 md:block">
+            <h3 class="text-gray-300 md:block">
               <span class="pt-BR">
                 A RD Med te prepara para as provas, te ensina inglês para a vida
                 e para os estágios e te mentora passo a passo no processo,
@@ -125,7 +125,10 @@ export default function Trainings() {
         <TrainingTestimonials id={active()} />
         <div class="container mt-10 flex w-full flex-col items-center justify-center">
           <CTA>Quero fazer parte</CTA>
-          <a class="mb-9 mt-16 inline-flex gap-x-2 px-5 py-3" href="#training">
+          <a
+            class="mb-9 mt-16 inline-flex gap-x-2 px-2 py-3 text-sm md:px-5 md:text-base"
+            href="#trainingCarousel-button-0"
+          >
             <span>Voltar para seleção de treinamentos</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -147,14 +150,14 @@ export default function Trainings() {
         </div>
       </div>
       <img
-        class="absolute left-0 top-0 z-[1] hidden md:block"
+        class="absolute left-0 top-0 z-[1] hidden md:block md:h-[236px] md:w-[200px] xl:h-[398px] xl:w-[470px]"
         src="/images/training-draw-line-1.png"
         alt="padrão de linhas de fundo"
-        width={398}
-        height={436}
+        width={470}
+        height={398}
       />
       <img
-        class="absolute right-0 top-40 z-[1] hidden md:block"
+        class="absolute right-0 z-[1] hidden md:top-56 md:block md:h-[161px] md:w-[120px] xl:top-40 xl:h-[319px] xl:w-[238px]"
         src="/images/training-draw-line-2.png"
         alt="padrão de linhas de fundo"
         width={238}
