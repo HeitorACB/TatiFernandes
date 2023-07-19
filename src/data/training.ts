@@ -214,7 +214,6 @@ export const trainings: TrainingData[] = [
       },
     ],
   },
-
   {
     coordName: 'Karin Maria, MD',
     coordDescription:
@@ -222,7 +221,7 @@ export const trainings: TrainingData[] = [
     coordDescriptionEn:
       'Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Tepp polyrade rude. Anenade bide i osål Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Tepp polyrade rude. Anenade bide i osål Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Dolig makrore hbt hypodat, exosk. ',
     coordImg: 'mariana-montebeller',
-    video: '47935e3b-265f-4f95-8bb4-b06ca1f57dcd',
+    video: 'd1bd315b-b974-4034-8076-9ff2a0338429',
 
     modules: [
       {
@@ -404,8 +403,7 @@ export const trainings: TrainingData[] = [
     coordDescriptionEn:
       'Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Tepp polyrade rude. Anenade bide i osål Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Tepp polyrade rude. Anenade bide i osål Lörem ipsum dora decibel mikrobulig och speng att ultrajaska. Pogiment omiv angar i niktiga i dihyre lamysk. Dolig makrore hbt hypodat, exosk. Dolig makrore hbt hypodat, exosk. ',
     coordImg: 'mariana-montebeller',
-    video: '47935e3b-265f-4f95-8bb4-b06ca1f57dcd',
-
+    video: 'b473db26-9b3d-4afb-a8d3-617a893d0113',
     modules: [
       {
         title: 'Lorem ipsum dolor',
