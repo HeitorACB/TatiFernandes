@@ -48,9 +48,9 @@ export default function Training(props: { id: number }) {
           class="h-[280px] w-[280px] rounded-full"
         />
         <div class="space-y-2">
-          <h4 class="text-xl uppercase leading-normal">
+          <p class="text-xl uppercase leading-normal">
             {trainings[props.id].coordName}
-          </h4>
+          </p>
           <p class="max-w-[690px] text-sm text-gray-300">
             {trainings[props.id].coordDescription}
           </p>

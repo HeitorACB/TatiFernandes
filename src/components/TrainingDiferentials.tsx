@@ -15,10 +15,10 @@ export default function TrainingDifferentials(props: { id: number }) {
           ({ icon, title, titleEn, description, descriptionEn }) => (
             <div class="gap-y- z-[2] flex w-[268px] flex-col">
               <CardIcon type={icon} />
-              <h5 class="text-[#FF3158]">
+              <p class="text-[#FF3158]">
                 <span class="pt-BR">{title}</span>
                 <span class="en">{titleEn}</span>
-              </h5>
+              </p>
               <p class="text-sm text-gray-300">
                 <span class="pt-BR">{description}</span>
                 <span class="en">{descriptionEn}</span>

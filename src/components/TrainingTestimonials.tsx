@@ -33,7 +33,7 @@ export default function TrainingTestimonials(props: { id: number }) {
                 class="mb-5 h-[80px] w-[80px] rounded-full"
                 loading="lazy"
               />
-              <h6 class="mb-2 text-lg font-semibold">{name}</h6>
+              <p class="mb-2 text-lg font-semibold">{name}</p>
               <p class="max-w-[900px]">
                 <span class="pt-BR">{description}</span>
                 <span class="en">{descriptionEn}</span>

@@ -58,10 +58,10 @@ export default function TrainingModules(props: { id: number }) {
                   <span class="block text-3xl font-bold text-[#4d5b9f]">
                     {index + 1}.
                   </span>
-                  <h5 class="block">
+                  <p class="block">
                     <span class="pt-BR">{title}</span>
                     <span class="en">{titleEn}</span>
-                  </h5>
+                  </p>
                 </div>
                 <p class="text-xs text-gray-200">
                   <span class="pt-BR">{description}</span>

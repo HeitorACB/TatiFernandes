@@ -10,6 +10,7 @@ export default function TrainingVideo(props: {
       {!showVideo() && (
         <img
           src="/images/video-thumbnail-facade.png"
+          alt="Thumbnail do vídeo de apresentação do curso RD Medicine"
           width="1280"
           onClick={() => setShowVideo(true)}
           class="pointer aspect-video max-w-full"
