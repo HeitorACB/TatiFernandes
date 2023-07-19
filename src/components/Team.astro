@@ -105,14 +105,12 @@ import { carouselTeamButtons, carouselTeamItems } from 'data/carousel';
   </Carousel>
 </Section>
 <script>
-  import carouseInit from 'utils/carousel';
-  import { carouselTeamItems, carouselTeamButtons } from 'data/carousel';
-  carouseInit({
-    carouselItems: carouselTeamItems,
+  import initCarousel from 'utils/carousel';
+  import { carouselTeamButtons } from 'data/carousel';
+  initCarousel({
     buttonSelectors: carouselTeamButtons.map(
       (_, index) => `#carousel-team-button-${index}`,
     ),
     carouselSelector: '#teamCarousel',
-    itemSpacing: 32,
   });
 </script>

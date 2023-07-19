@@ -2,16 +2,14 @@ import 'solid-js';
 import { carouselModuleButtons } from 'data/carousel';
 import { trainings } from 'data/training';
 import { onMount } from 'solid-js';
-import carouseInit from 'utils/carousel';
+import initCarousel from 'utils/carousel';
 export default function TrainingModules(props: { id: number }) {
   onMount(() => {
-    carouseInit({
-      carouselItems: trainings[props.id].modules,
+    initCarousel({
       buttonSelectors: carouselModuleButtons.map(
         (_, index) => `#carousel-training-button-${index}`,
       ),
       carouselSelector: '#carousel-training',
-      itemSpacing: 32,
     });
   });
 

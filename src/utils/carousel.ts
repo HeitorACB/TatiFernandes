@@ -3,8 +3,6 @@ import touch from './touch';
 type initCarouselProps = {
   carouselSelector: string;
   buttonSelectors: string[];
-  carouselItems: object[];
-  itemSpacing: number;
   onChange?: (active: number) => void;
   ignoreScrollEnd?: boolean;
 };
@@ -12,12 +10,20 @@ type initCarouselProps = {
 export default function initCarousel({
   carouselSelector,
   buttonSelectors,
-  carouselItems,
-  itemSpacing,
   onChange,
   ignoreScrollEnd,
 }: initCarouselProps) {
-  let itemWidth = document.querySelector(`${carouselSelector} *`)!.clientWidth;
+  const carouselItems = [
+    ...document.querySelectorAll(`${carouselSelector} > *`)!,
+  ] as HTMLElement[];
+  const carousel = document.querySelector(carouselSelector)!;
+
+  let itemWidth = carouselItems[0].clientWidth;
+
+  let carouselWidth = carousel.clientWidth;
+
+  let itemSpacing =
+    carouselItems[1].offsetLeft - carouselItems[0].offsetLeft - itemWidth;
 
   buttonSelectors.forEach((selector, index) => {
     document
@@ -26,16 +32,18 @@ export default function initCarousel({
         passive: true,
       });
   });
+
   window.addEventListener(
     'resize',
     () => {
-      itemWidth = document.querySelector(`${carouselSelector} *`)!.clientWidth;
+      itemWidth = carouselItems[0].clientWidth;
+      carouselWidth = carousel.clientWidth;
+      itemSpacing =
+        carouselItems[1].offsetLeft - carouselItems[0].offsetLeft - itemWidth;
+
       if (!ignoreScrollEnd) {
         const previousInitialActive = initialActive;
-        initialActive = Math.floor(
-          document.querySelector(carouselSelector)!.clientWidth /
-            (itemWidth + itemSpacing),
-        );
+        initialActive = Math.floor(carouselWidth / (itemWidth + itemSpacing));
         active = active + initialActive - previousInitialActive;
       }
     },
@@ -43,10 +51,7 @@ export default function initCarousel({
   );
   let initialActive = ignoreScrollEnd
     ? 1
-    : Math.floor(
-        document.querySelector(carouselSelector)!.clientWidth /
-          (itemWidth + itemSpacing),
-      );
+    : Math.floor(carouselWidth / (itemWidth + itemSpacing));
   let active = initialActive;
 
   function scrollToActive() {

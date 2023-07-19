@@ -2,17 +2,15 @@ import 'solid-js';
 import { trainings } from 'data/training';
 import { carouselTestimonialsButtons } from 'data/carousel';
 import { onMount } from 'solid-js';
-import carouseInit from 'utils/carousel';
+import initCarousel from 'utils/carousel';
 
 export default function TrainingTestimonials(props: { id: number }) {
   onMount(() => {
-    carouseInit({
-      carouselItems: trainings[props.id].modules,
+    initCarousel({
       buttonSelectors: carouselTestimonialsButtons.map(
         (_, index) => `#carousel-testimonials-button-${index}`,
       ),
       carouselSelector: '#carousel-testimonials',
-      itemSpacing: 0,
     });
   });
 

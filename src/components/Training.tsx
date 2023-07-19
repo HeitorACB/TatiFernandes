@@ -1,7 +1,7 @@
 import 'solid-js';
 import { createSignal, onMount } from 'solid-js';
 
-import carouseInit from 'utils/carousel';
+import initCarousel from 'utils/carousel';
 import { carouselTeamButtons } from 'data/carousel';
 import CarouselTrainings from './TrainingCarousel';
 import TrainingPresentation from './TrainingPresentation';
@@ -18,13 +18,11 @@ export default function Trainings() {
   >(() => {});
 
   onMount(() => {
-    const changeActive = carouseInit({
-      carouselItems: trainings,
+    const changeActive = initCarousel({
       buttonSelectors: carouselTeamButtons.map(
         (_, index) => `#trainingCarousel-button-${index}`,
       ),
       carouselSelector: '#trainingCarousel',
-      itemSpacing: 32,
       onChange: triggerActive,
       ignoreScrollEnd: true,
     });
