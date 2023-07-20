@@ -10,6 +10,7 @@ import TrainingDifferentials from './TrainingDiferentials';
 import TrainingTestimonials from './TrainingTestimonials';
 import CTA from './CTA';
 import { trainings } from 'data/training';
+import { openForm } from 'utils/form';
 
 export default function Trainings() {
   const [active, setActive] = createSignal(0);
@@ -132,12 +133,16 @@ export default function Trainings() {
         <TrainingDifferentials id={active()} />
         <TrainingTestimonials id={active()} />
         <div class="container mt-10 flex w-full flex-col items-center justify-center">
-          <CTA>Quero fazer parte</CTA>
+          <CTA onClick={() => openForm(trainings[active()].sheet)}>
+            <span class="pt-BR">Quero fazer parte</span>
+            <span class="en">I want to be part of it</span>
+          </CTA>
           <a
             class="mb-9 mt-16 inline-flex gap-x-2 px-2 py-3 text-sm md:px-5 md:text-base"
             href="#trainingCarousel-button-0"
           >
-            <span>Voltar para seleção de treinamentos</span>
+            <span class="pt-BR">Voltar para seleção de treinamentos</span>
+            <span class="en">Back to training selection</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="25"

@@ -1,7 +1,9 @@
 import type { CardIcon } from 'components/CardIcon';
+import type { SendFormData } from 'api/sendForm';
 
 type TrainingData = {
   name: string;
+  sheet: SendFormData['sheetName'];
   description: string;
   descriptionEn: string;
   img: string;
@@ -35,6 +37,7 @@ type TrainingData = {
 export const trainings: TrainingData[] = [
   {
     name: 'RD Step 1',
+    sheet: 'rd_step_1',
     description:
       'Vença a principal barreira para se tornar médico nos EUA em 9 meses com um curso extensivo em inglês e português baseado em didática simples e múltiplas revisões, dado por professores com as maiores notas do Brasil.',
     descriptionEn:
@@ -102,7 +105,7 @@ export const trainings: TrainingData[] = [
       {
         icon: 'graduate',
         title: 'Curso extensivo',
-        titleEn: 'extensive course',
+        titleEn: 'Extensive course',
         description:
           'Curso extensivo para o STEP 1 em inglês e português com didática simples e sistema de revisões constantes dado por professores com as maiores notas do Brasil e hoje residentes nas maiores  instituições americanas.',
         descriptionEn:
@@ -111,7 +114,7 @@ export const trainings: TrainingData[] = [
       {
         icon: 'tv',
         title: 'Ciclos de aula',
-        titleEn: 'class cycles',
+        titleEn: 'Class cycles',
         description:
           'Caminhamos em ciclos de aula seguidos de revisão. Se na semana você teve aulas de 3 matérias diferentes em inglês, na semana seguinte temos aulas de revisão ao vivo em português baseadas em questões para revisarmos os assuntos estudados.',
         descriptionEn:
@@ -120,7 +123,7 @@ export const trainings: TrainingData[] = [
       {
         icon: 'map',
         title: 'Cronograma de estudos',
-        titleEn: 'study schedule',
+        titleEn: 'Study schedule',
         description:
           'Cronograma diário de estudos, direcionando páginas a serem lidas, videos a serem assistidos, flash cards a serem feitos e número de questões a serem executados.',
         descriptionEn:
@@ -138,14 +141,14 @@ export const trainings: TrainingData[] = [
       {
         icon: 'book',
         title: 'Simulados semanais',
-        titleEn: 'weekly simulations',
+        titleEn: 'Weekly simulations',
         description: 'Simulados semanais sobre os temas da semana anterior.',
         descriptionEn: 'Weekly simulations on the themes of the previous week.',
       },
       {
         icon: 'bar-chart',
         title: 'Processo eficaz',
-        titleEn: 'effective process',
+        titleEn: 'Effective process',
         description: '36 semanas (9 meses) para o seu pass no STEP 1.',
         descriptionEn: '36 weeks (9 months) for your STEP 1 pass.',
       },
@@ -228,6 +231,7 @@ export const trainings: TrainingData[] = [
   },
   {
     name: 'English, MD',
+    sheet: 'english',
     description:
       'Inglês real do dia a dia médico americano, do básico ao avançado, com estudos de textos, flash cards, exercícios e 2 encontros ao vivo de conversação semanal. É a sua preparação perfeita para os estágios, pesquisa e residência médica nos EUA.',
     descriptionEn:
@@ -279,7 +283,7 @@ export const trainings: TrainingData[] = [
       {
         icon: 'graduate',
         title: 'Aulas de gramática',
-        titleEn: 'grammar classes',
+        titleEn: 'Grammar classes',
         description:
           'Aulas de gramática e estudos de texto para melhorar também o seu inglês geral e não apenas o inglês médico.',
         descriptionEn:
@@ -288,7 +292,7 @@ export const trainings: TrainingData[] = [
       {
         icon: 'announcement',
         title: 'Flash cards',
-        titleEn: 'flash cards',
+        titleEn: 'Flash cards',
         description:
           'Flash cards com áudio nativo com trechos dos textos estudados, para revisão e ganho de pronuncia e vocabulário.',
         descriptionEn:
@@ -297,7 +301,7 @@ export const trainings: TrainingData[] = [
       {
         icon: 'file-search',
         title: 'Situações médicas',
-        titleEn: 'medical situations',
+        titleEn: 'Medical situations',
         description:
           'Áudios de situações médicas diárias com conversas entre o médico e o paciente para estudantes de nível básico a intermediário.',
         descriptionEn:
@@ -306,7 +310,7 @@ export const trainings: TrainingData[] = [
       {
         icon: 'users',
         title: 'sala de conversação',
-        titleEn: 'chat room',
+        titleEn: 'Chat room',
         description:
           'Salas de conversação às terças à noite sobre notícias americanas em geral relacionando medicina e politica, meio ambiente, economia e temas polêmicos.',
         descriptionEn:
@@ -315,7 +319,7 @@ export const trainings: TrainingData[] = [
       {
         icon: 'tv',
         title: 'Aula ao vivo',
-        titleEn: 'live class',
+        titleEn: 'Live class',
         description:
           'Aulas ao vivo de inglês médico básico às quintas à noite. Nas aulas ao vivo de inglês médico básico o aluno aprende as frases e termos mais comuns, e pratica o entendimento e a pronuncia num ambiente totalmente protegido.',
         descriptionEn:
@@ -324,7 +328,7 @@ export const trainings: TrainingData[] = [
       {
         icon: 'tv',
         title: 'Aula avançada',
-        titleEn: 'advanced class',
+        titleEn: 'Advanced class',
         description:
           'Aulas ao vivo de inglês médico avançado: as aulas de inglês médico avançado fazemos simulação de atendimento real em inglês, discussão de casos no modelo das residências americanas e simulações para o OET, teste de inglês cobrado na validação.',
         descriptionEn:
@@ -416,6 +420,7 @@ export const trainings: TrainingData[] = [
   },
   {
     name: 'Você Médico nos EUA',
+    sheet: 'voce_medico_nos_eua',
     description:
       'Mentoria personalizada e detalhada do inicio ao fim do seu processo de validação. O VMEUA ensina todo o processo, promove mesas redondas e meetings de networking, te posiciona nos estágios, cuida da sua aplicação para a residência e te treina para as entrevistas.',
     descriptionEn:
@@ -467,7 +472,7 @@ export const trainings: TrainingData[] = [
       {
         icon: 'graduate',
         title: 'Curso extensivo',
-        titleEn: 'extensive course',
+        titleEn: 'Extensive course',
         description:
           '1 reunião ao vivo mensal de mentoria para tiragem de dúvidas no processo e para prática ao vivo do speaking do Ocupacional English Test (OET).',
         descriptionEn:
@@ -476,7 +481,7 @@ export const trainings: TrainingData[] = [
       {
         icon: 'tv',
         title: 'Ciclos de aula',
-        titleEn: 'class cycles',
+        titleEn: 'Class cycles',
         description:
           'Reuniões todos os sábados de manhã para mentoria e discussão de questões em português.',
         descriptionEn:
@@ -485,7 +490,7 @@ export const trainings: TrainingData[] = [
       {
         icon: 'clipboard',
         title: 'Cronograma de estudos',
-        titleEn: 'study schedule',
+        titleEn: 'Study schedule',
         description:
           'Aulas dissecando cada parte do processo, desde as burocracias iniciais até as estratégias de estudo, materiais, simulados, construção da aplicação e Match.',
         descriptionEn:
@@ -503,7 +508,7 @@ export const trainings: TrainingData[] = [
       {
         icon: 'book',
         title: 'Simulados semanais',
-        titleEn: 'weekly simulations',
+        titleEn: 'Weekly simulations',
         description:
           'O time do Match também está incluído no VMEUA e engloba o cuidado completo e detalhado para a sua aplicação para residência médica ou clinical fellowship nos EUA. Os mentores participam como entrevistadores na seleção real para os programas de residência nos EUA e usam essa habilidade para treinar você 1:1 para as entrevistas.',
         descriptionEn:
@@ -512,7 +517,7 @@ export const trainings: TrainingData[] = [
       {
         icon: 'bar-chart',
         title: 'Processo eficaz',
-        titleEn: 'effective process',
+        titleEn: 'Effective process',
         description:
           'O RD Clerkship and Observship Program estão incluídos no VMEUA. Aqui nós procuramos as oportunidades de estágios para você de acordo com o seu perfil, cuidamos do seu currículo e documentos de aplicação e criamos os modelos de email personalidades que você precisa enviar às instituições.',
         descriptionEn:
@@ -588,6 +593,7 @@ export const trainings: TrainingData[] = [
   },
   {
     name: 'RD Clerkship and Observership Program',
+    sheet: 'rd_clerkship',
     description:
       'a RD med busca as oportunidades de estágios nos EUA de acordo com o seu perfil, cuida da sua documentação de aplicação e escreve os modelos de email para você enviar aos departamentos.',
     descriptionEn:
@@ -655,7 +661,7 @@ export const trainings: TrainingData[] = [
       {
         icon: 'graduate',
         title: 'Curso extensivo',
-        titleEn: 'extensive course',
+        titleEn: 'Extensive course',
         description:
           'Curso extensivo para o STEP 1 em inglês e português com didática simples e sistema de revisões constantes dado por professores com as maiores notas do Brasil e hoje residentes nas maiores  instituições americanas.',
         descriptionEn:
@@ -664,7 +670,7 @@ export const trainings: TrainingData[] = [
       {
         icon: 'tv',
         title: 'Ciclos de aula',
-        titleEn: 'class cycles',
+        titleEn: 'Class cycles',
         description:
           'Caminhamos em ciclos de aula seguidos de revisão. Se na semana você teve aulas de 3 matérias diferentes em inglês, na semana seguinte temos aulas de revisão ao vivo em português baseadas em questões para revisarmos os assuntos estudados.',
         descriptionEn:
@@ -673,7 +679,7 @@ export const trainings: TrainingData[] = [
       {
         icon: 'map',
         title: 'Cronograma de estudos',
-        titleEn: 'study schedule',
+        titleEn: 'Study schedule',
         description:
           'Cronograma diário de estudos, direcionando páginas a serem lidas, videos a serem assistidos, flash cards a serem feitos e número de questões a serem executados.',
         descriptionEn:
@@ -691,14 +697,14 @@ export const trainings: TrainingData[] = [
       {
         icon: 'book',
         title: 'Simulados semanais',
-        titleEn: 'weekly simulations',
+        titleEn: 'Weekly simulations',
         description: 'Simulados semanais sobre os temas da semana anterior.',
         descriptionEn: 'Weekly simulations on the themes of the previous week.',
       },
       {
         icon: 'bar-chart',
         title: 'Processo eficaz',
-        titleEn: 'effective process',
+        titleEn: 'Effective process',
         description: '36 semanas (9 meses) para o seu pass no STEP 1.',
         descriptionEn: '36 weeks (9 months) for your STEP 1 pass.',
       },
@@ -781,6 +787,7 @@ export const trainings: TrainingData[] = [
   },
   {
     name: 'RD Research Fellow Program',
+    sheet: 'rd_research',
     description:
       'Procuramos oportunidades remuneradas ou não de pesquisa nos EUA. Em geral são programas de 1 ano e você não precisa ter o diploma validado. Uma oportunidade de fortalecer muito a sua aplicação para especialidades competitivas ou especialidades menos concorridas',
     descriptionEn:
@@ -848,7 +855,7 @@ export const trainings: TrainingData[] = [
       {
         icon: 'graduate',
         title: 'Curso extensivo',
-        titleEn: 'extensive course',
+        titleEn: 'Extensive course',
         description:
           'Curso extensivo para o STEP 1 em inglês e português com didática simples e sistema de revisões constantes dado por professores com as maiores notas do Brasil e hoje residentes nas maiores  instituições americanas.',
         descriptionEn:
@@ -857,7 +864,7 @@ export const trainings: TrainingData[] = [
       {
         icon: 'tv',
         title: 'Ciclos de aula',
-        titleEn: 'class cycles',
+        titleEn: 'Class cycles',
         description:
           'Caminhamos em ciclos de aula seguidos de revisão. Se na semana você teve aulas de 3 matérias diferentes em inglês, na semana seguinte temos aulas de revisão ao vivo em português baseadas em questões para revisarmos os assuntos estudados.',
         descriptionEn:
@@ -866,7 +873,7 @@ export const trainings: TrainingData[] = [
       {
         icon: 'map',
         title: 'Cronograma de estudos',
-        titleEn: 'study schedule',
+        titleEn: 'Study schedule',
         description:
           'Cronograma diário de estudos, direcionando páginas a serem lidas, videos a serem assistidos, flash cards a serem feitos e número de questões a serem executados.',
         descriptionEn:
@@ -884,14 +891,14 @@ export const trainings: TrainingData[] = [
       {
         icon: 'book',
         title: 'Simulados semanais',
-        titleEn: 'weekly simulations',
+        titleEn: 'Weekly simulations',
         description: 'Simulados semanais sobre os temas da semana anterior.',
         descriptionEn: 'Weekly simulations on the themes of the previous week.',
       },
       {
         icon: 'bar-chart',
         title: 'Processo eficaz',
-        titleEn: 'effective process',
+        titleEn: 'Effective process',
         description: '36 semanas (9 meses) para o seu pass no STEP 1.',
         descriptionEn: '36 weeks (9 months) for your STEP 1 pass.',
       },
@@ -974,6 +981,7 @@ export const trainings: TrainingData[] = [
   },
   {
     name: 'Time do Match',
+    sheet: 'time_do_match',
     description:
       'Nós cuidamos de tudo multiplicar as suas chances e evitar erros no momento crucial da aplicação. O time do match conta com mentores que são Diretores de Programa de residência nos EUA, Diretores de internato (clerkship) nos EUA e muito mais.',
     descriptionEn:
@@ -1041,7 +1049,7 @@ export const trainings: TrainingData[] = [
       {
         icon: 'graduate',
         title: 'Curso extensivo',
-        titleEn: 'extensive course',
+        titleEn: 'Extensive course',
         description:
           'Curso extensivo para o STEP 1 em inglês e português com didática simples e sistema de revisões constantes dado por professores com as maiores notas do Brasil e hoje residentes nas maiores  instituições americanas.',
         descriptionEn:
@@ -1050,7 +1058,7 @@ export const trainings: TrainingData[] = [
       {
         icon: 'tv',
         title: 'Ciclos de aula',
-        titleEn: 'class cycles',
+        titleEn: 'Class cycles',
         description:
           'Caminhamos em ciclos de aula seguidos de revisão. Se na semana você teve aulas de 3 matérias diferentes em inglês, na semana seguinte temos aulas de revisão ao vivo em português baseadas em questões para revisarmos os assuntos estudados.',
         descriptionEn:
@@ -1059,7 +1067,7 @@ export const trainings: TrainingData[] = [
       {
         icon: 'map',
         title: 'Cronograma de estudos',
-        titleEn: 'study schedule',
+        titleEn: 'Study schedule',
         description:
           'Cronograma diário de estudos, direcionando páginas a serem lidas, videos a serem assistidos, flash cards a serem feitos e número de questões a serem executados.',
         descriptionEn:
@@ -1077,14 +1085,14 @@ export const trainings: TrainingData[] = [
       {
         icon: 'book',
         title: 'Simulados semanais',
-        titleEn: 'weekly simulations',
+        titleEn: 'Weekly simulations',
         description: 'Simulados semanais sobre os temas da semana anterior.',
         descriptionEn: 'Weekly simulations on the themes of the previous week.',
       },
       {
         icon: 'bar-chart',
         title: 'Processo eficaz',
-        titleEn: 'effective process',
+        titleEn: 'Effective process',
         description: '36 semanas (9 meses) para o seu pass no STEP 1.',
         descriptionEn: '36 weeks (9 months) for your STEP 1 pass.',
       },

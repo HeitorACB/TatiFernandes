@@ -2,6 +2,7 @@ import 'solid-js';
 import { trainings } from 'data/training';
 import CTA from './CTA';
 import TrainingVideo from './TrainingVideo';
+import { openForm } from 'utils/form';
 
 export default function Training(props: { id: number }) {
   return (
@@ -27,13 +28,19 @@ export default function Training(props: { id: number }) {
             </h3>
           </div>
         </div>
-        <CTA class="hidden lg:block">
+        <CTA
+          class="hidden lg:block"
+          onClick={() => openForm(trainings[props.id].sheet)}
+        >
           <span class="pt-BR">Quero uma aula grátis</span>
           <span class="en">I want a free class</span>
         </CTA>
       </div>
       <TrainingVideo id={trainings[props.id].video} />
-      <CTA class="mx-auto mt-14 block lg:hidden">
+      <CTA
+        class="mx-auto mt-14 block lg:hidden"
+        onClick={() => openForm(trainings[props.id].sheet)}
+      >
         <span class="pt-BR">Quero uma aula grátis</span>
         <span class="en">I want a free class</span>
       </CTA>

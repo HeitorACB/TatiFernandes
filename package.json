@@ -18,10 +18,12 @@
     "@fontsource-variable/unbounded": "^5.0.5",
     "@fontsource/poppins": "^5.0.5",
     "astro": "^2.5.7",
+    "inputmask": "^5.0.8",
     "solid-js": "^1.7.6",
     "tailwindcss": "^3.3.2"
   },
   "devDependencies": {
+    "@types/inputmask": "^5.0.3",
     "@typescript-eslint/parser": "^5.59.8",
     "eslint": "^8.42.0",
     "eslint-plugin-astro": "^0.27.1",

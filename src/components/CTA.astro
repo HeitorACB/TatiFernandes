@@ -26,3 +26,15 @@ const { className = '', ...rest } = Astro.props;
     </button>
   )
 }
+
+<script>
+  import { openForm } from 'utils/form';
+  import type { SendFormData } from 'api/sendForm';
+  document.querySelectorAll('button[data-formid]').forEach((button) => {
+    button.addEventListener('click', () => {
+      openForm(
+        (button as HTMLElement).dataset.formid as SendFormData['sheetName'],
+      );
+    });
+  });
+</script>

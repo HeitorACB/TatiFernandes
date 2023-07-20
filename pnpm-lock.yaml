@@ -23,6 +23,9 @@ dependencies:
   astro:
     specifier: ^2.5.7
     version: 2.5.7
+  inputmask:
+    specifier: ^5.0.8
+    version: 5.0.8
   solid-js:
     specifier: ^1.7.6
     version: 1.7.6
@@ -31,6 +34,9 @@ dependencies:
     version: 3.3.2
 
 devDependencies:
+  '@types/inputmask':
+    specifier: ^5.0.3
+    version: 5.0.3
   '@typescript-eslint/parser':
     specifier: ^5.59.8
     version: 5.59.8(eslint@8.42.0)(typescript@5.1.6)
@@ -1035,6 +1041,10 @@ packages:
     dependencies:
       '@types/unist': 2.0.7
     dev: false
+
+  /@types/inputmask@5.0.3:
+    resolution: {integrity: sha512-9aTXacRhf9D3+porVydLR28ll8/y3TQIrXEXv7ZWY0c3Lzl/1r4nHoaesZeh2Fd+UIefpWZrg2tkSnDn/dKUsw==}
+    dev: true
 
   /@types/json5@0.0.30:
     resolution: {integrity: sha512-sqm9g7mHlPY/43fcSNrCYfOeX9zkTTK+euO5E6+CVijSMm5tTjkVdwdqRkY3ljjIAf8679vps5jKUoJBCLsMDA==}
@@ -2658,6 +2668,10 @@ packages:
 
   /inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
+
+  /inputmask@5.0.8:
+    resolution: {integrity: sha512-1WcbyudPTXP1B28ozWWyFa6QRIUG4KiLoyR6LFHlpT4OfTzRqFfWgHFadNvRuMN1S9XNVz9CdNvCGjJi+uAMqQ==}
+    dev: false
 
   /internal-slot@1.0.5:
     resolution: {integrity: sha512-Y+R5hJrzs52QCG2laLn4udYVnxsfny9CpOhNhUvk/SSSVyF6T27FzRbF0sroPidSu3X8oEAkOn2K804mjpt6UQ==}

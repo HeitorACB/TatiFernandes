@@ -92,6 +92,7 @@ import { Image } from '@astrojs/image/components';
   </nav>
 </header>
 <script>
+  import changeFormLanguage from 'utils/changeFormLanguage';
   const menuButton = document.querySelector('#menu-button')!;
   const menu = document.querySelector('#menu-button + ul')!;
 
@@ -129,9 +130,11 @@ import { Image } from '@astrojs/image/components';
     if (lang === 'pt-BR') {
       document.documentElement.lang = 'en';
       style.innerHTML = en;
+      changeFormLanguage('en');
     } else {
       document.documentElement.lang = 'pt-BR';
       style.innerHTML = pt;
+      changeFormLanguage('pt-BR');
     }
     document.head.appendChild(style);
   });
