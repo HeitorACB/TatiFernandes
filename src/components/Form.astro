@@ -10,19 +10,17 @@ import CTA from './CTA.astro';
   id="form"
 >
   <div class="fixed inset-0 z-10 overflow-y-auto">
-    <div
-      class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0"
-    >
+    <div class="flex min-h-full justify-center text-center items-center p-0">
       <div
         id="backdropForm"
         class="fixed inset-0 bg-gray-800 bg-opacity-50 transition-opacity cursor-pointer"
       >
       </div>
       <div
-        class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg"
+        class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all my-8 w-full max-w-lg"
       >
         <form name="leadForm">
-          <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+          <div class="bg-white px-4 pt-5 p-6 pb-4">
             <div class="flex justify-between w-full items-start">
               <h4
                 class="text-[#00093E] text-2xl font-semibold leading-none mb-10"
@@ -93,7 +91,7 @@ import CTA from './CTA.astro';
               <input type="hidden" name="sheetName" />
             </div>
           </div>
-          <div class="px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+          <div class="py-3 flex flex-row-reverse px-6">
             <CTA className="group disabled:bg-gray-400" type="submit">
               <span class="relative">
                 <svg
