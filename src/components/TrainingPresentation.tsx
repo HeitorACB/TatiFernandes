@@ -52,7 +52,7 @@ export default function Training(props: { id: number }) {
       </div>
       <div class="mb-20 flex flex-col items-center gap-x-8 text-center md:flex-row md:justify-normal md:text-left">
         <img
-          src={`/images/specialists/${trainings[props.id].coordImg}.png`}
+          src={`/images/specialists/${trainings[props.id].coordImg}.webp`}
           alt={`Foto do especialista ${trainings[props.id].coordName.replace(
             /,.*$/,
             '',
