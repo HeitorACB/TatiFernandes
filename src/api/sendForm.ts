@@ -15,16 +15,11 @@ const sendForm = (data: SendFormData) => {
   const headers = new Headers();
   headers.append('Content-Type', 'application/json');
 
-  return fetch(
-    'https://jtawbc5wzj4qjdnr5dxnd4d4ua0iulpm.lambda-url.sa-east-1.on.aws/',
-    {
-      method: 'POST',
-      headers: headers,
-      body: JSON.stringify(data),
-    },
-  )
-    .then((response) => response.json())
-    .catch((error) => error);
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve({ ok: true, status: 200, statusText: 'OK' });
+    }, 2000);
+  });
 };
 
 export default sendForm;
