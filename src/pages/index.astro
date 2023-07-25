@@ -1,36 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import Hero from '../components/Hero.astro';
-import Benefits from '../components/Benefits.astro';
-import Team from '../components/Team.astro';
-import Trainings from '../components/Training';
-import About from '../components/About.astro';
-import Invite from '../components/InviteSection.astro';
-import BackgroundVideo from '../components/BackgroundVideo.astro';
-import Form from '../components/Form.astro';
 ---
 
-<Layout title="RD Medicine">
+<Layout title="Estética Tati Fernandes">
   <Header />
-  <BackgroundVideo />
-  <main class="w-full">
-    <Hero />
-    <Benefits />
-    <Team />
-    <Trainings client:visible />
-    <About />
-    <Invite />
-  </main>
-  <Footer />
+  <main class="w-full"></main>
+
   <a
     href="https://wa.me/send?phone=5511973970032&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20RD%20Medicine."
     rel="noopener noreferrer"
     target="_blank"
     aria-label="Entrar em contato pelo whatsapp"
     type="button"
-    class="right-4 bottom-4 fixed z-[10] inline-block bg-[#128c7e] rounded-full px-4 py-4 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+    class="right-4 bottom-4 fixed z-[10] inline-block bg-[#a055c9] rounded-full px-4 py-4 text-xs font-medium uppercase leading-normal text-[#ffffff] shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -43,5 +26,4 @@ import Form from '../components/Form.astro';
       ></path>
     </svg>
   </a>
-  <Form />
 </Layout>

@@ -3,35 +3,22 @@ import { Image } from '@astrojs/image/components';
 ---
 
 <header
-  class="container flex items-center justify-between text-white relative z-[2]"
+  class="container flex items-center justify-between text-black relative z-[2]"
 >
   <div
-    class="flex h-[104px] lg:w-[79px] w-24 justify-center rounded-b-full bg-white pb-[25px] pt-[18px]"
+    class="flex h-[104px] lg:w-[91px] w-24 justify-center pb-[25px] pt-[18px]"
   >
     <Image
-      src="/images/logo-rd-medicine.png"
+      src="/images/logoRoxa.png"
       loading="eager"
       format="webp"
       alt="Logo RD Medicine"
       width={92}
       height={92}
-      class="inline-block h-[61px] w-[61px] align-middle"
+      class="inline-block h-[91px] w-[100px] align-middle"
     />
   </div>
   <nav class="flex gap-x-14 lg:gap-x-6 text-sm relative">
-    <button
-      id="btn-lang"
-      title="Alterar idioma"
-      class="xl:text-3xl lg:text-2xl text-3xl lg:order-1 -order-1"
-    >
-      <span class="pt-BR">🇧🇷</span>
-      <span class="en">🇺🇸</span>
-      <p class="text-sm">
-        <span class="pt-BR">PT</span>
-        <span class="en">EN</span>
-      </p>
-      <span class="sr-only">Alterar idioma</span>
-    </button>
     <button id="menu-button" class="lg:hidden flex gap-x-2 items-center">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -48,51 +35,44 @@ import { Image } from '@astrojs/image/components';
           stroke-linejoin="round"></path>
       </svg>
       <span class="pt-BR">Menu</span>
-      <span class="en">Menu</span>
     </button>
     <ul
-      class="flex-col w-[340px] lg:w-[unset] top-6 absolute bg-white lg:bg-transparent text-black lg:text-white right-0 lg:static lg:flex-row hidden bg-transparent capitalize lg:flex rounded-lg lg:rounded-none shadow-2xl lg:shadow-none transition-all duration-500 ease-in-out"
+      class="flex-col w-[340px] lg:w-[unset] top-16 absolute bg-white lg:bg-transparent text-black lg:text-black right-1 lg:static lg:flex-row hidden capitalize lg:flex rounded-lg lg:rounded-none shadow-2xl lg:shadow-none pt-[18px] items-center"
     >
       <a href="#features">
         <li class="p-6">
           <span class="pt-BR">diferenciais</span>
-          <span class="en">features</span>
         </li>
       </a>
       <a href="#team">
         <li class="p-6">
           <span class="pt-BR">nossa equipe</span>
-          <span class="en">our team</span>
         </li>
       </a>
       <a href="#training">
         <li class="p-6">
-          <span class="pt-BR">nossos treinamentos</span>
-          <span class="en">our trainings</span>
+          <span class="pt-BR">nossos Tratamentos</span>
         </li>
       </a>
       <a href="#about">
         <li class="p-6">
-          <span class="pt-BR">sobre a RD Medicine</span>
-          <span class="en">about RD Medicine</span>
+          <span class="pt-BR">sobre a Estética</span>
         </li>
       </a>
       <li class="p-6 lg:py-6 lg:px-0 xl:p-6">
         <a
-          class="rounded-[70px] border-[2px] lg:border-white border-[#203DE2] lg:text-white text-[#203DE2] py-3 px-12 md:px-14 text-sm leading-6"
+          class="rounded-[70px] border-[2px] lg:border-white border-[#203DE2] lg:text-black text-[#203DE2] py-3 px-12 md:px-14 text-sm leading-6"
           href="https://rdmedicine.cademi.com.br/"
           rel="noopener noreferrer"
           target="_blank"
         >
-          <span class="pt-BR">Acessar</span>
-          <span class="en">Access</span>
+          <span class="pt-BR">Contato</span>
         </a>
       </li>
     </ul>
   </nav>
 </header>
 <script>
-  import changeFormLanguage from 'utils/changeFormLanguage';
   const menuButton = document.querySelector('#menu-button')!;
   const menu = document.querySelector('#menu-button + ul')!;
 
@@ -103,39 +83,5 @@ import { Image } from '@astrojs/image/components';
   menuButton.addEventListener('click', (event) => {
     menu.classList.toggle('hidden');
     event.stopPropagation();
-  });
-
-  const btnLang = document.querySelector('#btn-lang')!;
-  const style = document.createElement('style')!;
-
-  const pt = `
-    .pt-BR {
-      display: inherit !important;
-    }
-    .en {
-      display: none !important;
-    }
-  `;
-  const en = `
-    .pt-BR {
-      display: none !important;
-    }
-    .en {
-      display: inherit !important;
-    }
-  `;
-
-  btnLang.addEventListener('click', () => {
-    const lang = document.documentElement.lang;
-    if (lang === 'pt-BR') {
-      document.documentElement.lang = 'en';
-      style.innerHTML = en;
-      changeFormLanguage('en');
-    } else {
-      document.documentElement.lang = 'pt-BR';
-      style.innerHTML = pt;
-      changeFormLanguage('pt-BR');
-    }
-    document.head.appendChild(style);
   });
 </script>
